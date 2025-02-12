@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existing Page with CSV Data Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-container input, .search-container select, .search-container button {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Existing Page</h1>
+        <p>This is some existing content on my page.</p>
+
+        <!-- CSV Data Filter Form -->
+        <form method="POST">
+            <div class="search-container">
+                <input type="checkbox" name="witness-ind" checked> Exclude event witness data<br><br>
+                
+                <label for="search-input-given-name">Given Name:</label>
+                <input type="text" name="search-input-given-name" placeholder="Given Name..."><br><br>
+                
+                <label for="search-input-surname">Surname:</label>
+                <input type="text" name="search-input-surname" placeholder="Surname..."><br><br>
+                
+                <label for="search-input-town">Town:</label>
+                <input type="text" name="search-input-town" placeholder="Town..."><br><br>
+                
+                <label for="search-input-comments">Comments:</label>
+                <input type="text" name="search-input-comments" placeholder="Comments..."><br><br>
+                
+                <label for="search-input-year">Year:</label>
+                <input type="text" name="search-input-year" placeholder="Year..."><br><br>
+                
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- Filtered Data Table -->
+        {% if data is not none %}
+            <table>
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                            <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data.itertuples() %}
+                        <tr>
+                            {% for value in row[1:] %}
+                                <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+
+        <!-- More existing content -->
+        <p>More content on my existing page.</p>
+    </div>
+</body>
+</html>
