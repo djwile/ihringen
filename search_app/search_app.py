@@ -74,7 +74,7 @@ def index():
                         .drop_duplicates(subset=["EntryNum"], keep='first') \
                         .merge(filtered_data, on='EntryNum', validate="1:m")
 
-    return render_template("existing_page.html", columns=columns, data=filtered_data)
+    return render_template("embed-search_app.html", columns=columns, data=filtered_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
