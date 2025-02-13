@@ -2,8 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import pandas as pd
 import io
-from fuzzywuzzy import fuzz
-import re
+#from app import app
 
 app = Flask(__name__)
 
@@ -41,6 +40,10 @@ def soundex(name):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    return render_template("search_app-page.html")
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
     df = fetch_csv_data()
     columns = ["FirstNameNorm", "LastNameNorm", "TownOfOrigin", "Notes", "Year"]
     field_mapping = {
@@ -74,7 +77,7 @@ def index():
                         .drop_duplicates(subset=["EntryNum"], keep='first') \
                         .merge(filtered_data, on='EntryNum', validate="1:m")
 
-    return render_template("search_app-page.html", columns=columns, data=filtered_data)
+    return render_template("search_app-results.html", columns=filtered_data.columns, data=filtered_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
