@@ -53,7 +53,7 @@ def index():
     filtered_data = df[df["WitnessInd"] == False] if request.form.get("witness-ind") == "on" else df
 
     if request.method == "POST":
-        for field in ["Given Name",col "Surname", "Town", "Comments", "Year"]:
+        for field in ["Given Name", "Surname", "Town", "Comments", "Year"]:
             search_term = request.form.get(f"search-input-{field.replace(' ', '-').lower()}")
             if search_term:
                 column = field_mapping[field]
