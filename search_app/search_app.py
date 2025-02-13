@@ -45,7 +45,7 @@ def index():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     df = fetch_csv_data()
-    columns = ["FirstNameNorm", "LastNameNorm", "TownOfOrigin", "Notes", "Year"]
+#    columns = ["FirstNameNorm", "LastNameNorm", "TownOfOrigin", "Notes", "Year"]
     field_mapping = {
         "Given Name": "FirstNameNorm",
         "Surname": "LastNameNorm",
