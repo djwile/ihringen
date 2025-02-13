@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Existing Page with CSV Data Filter</title>
+    <title>Page with CSV Data Filter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,12 +12,39 @@
             margin: 20px;
         }
         .search-container {
-            margin-bottom: 20px;
-        }
-        .search-container input, .search-container select, .search-container button {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 15px 10px;
+            max-width: 400px;
+            margin: 5px auto;
+            background-color: white;
             padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-container input, .search-container select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .search-container label {
+            text-align: right;
+            padding: 5px;
+            padding-right: 5px;
             font-size: 16px;
-            margin-right: 10px;
+            color: #333;
+        }
+        .search-container button {
+            grid-column: 1 / span 2;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         table {
             width: 100%;
@@ -41,22 +68,23 @@
         <!-- CSV Data Filter Form -->
         <form method="POST">
             <div class="search-container">
-                <input type="checkbox" name="witness-ind" checked> Exclude event witness data from results<br><br>
-                
                 <label for="search-input-given-name">Given Name:</label>
-                <input type="text" name="search-input-given-name" placeholder="Given Name..."><br>
+                <input type="text" name="search-input-given-name" placeholder="Given Name...">
                 
                 <label for="search-input-surname">Surname:</label>
-                <input type="text" name="search-input-surname" placeholder="Surname..."><br>
-                
+                <input type="text" name="search-input-surname" placeholder="Surname...">
+             
                 <label for="search-input-town">Town:</label>
-                <input type="text" name="search-input-town" placeholder="Town..."><br>
+                <input type="text" name="search-input-town" placeholder="Town...">
                 
                 <label for="search-input-comments">Comments:</label>
-                <input type="text" name="search-input-comments" placeholder="Comments..."><br>
+                <input type="text" name="search-input-comments" placeholder="Comments...">
                 
                 <label for="search-input-year">Year:</label>
-                <input type="text" name="search-input-year" placeholder="Year..."><br>
+                <input type="text" name="search-input-year" placeholder="Year...">
+
+                <input type="checkbox" name="witness-ind" checked=""> 
+                <label for="checkbox">Exclude event witness data from results</label>
                 
                 <button type="submit">Search</button>
             </div>
