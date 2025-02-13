@@ -63,18 +63,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
     </style>
 </head>
 <body>
@@ -83,7 +71,7 @@
         <p>This is some content on my page.</p>
 
         <!-- CSV Data Filter Form -->
-        <form method="POST">
+        <form method="POST" action="/search" target="_blank">
             <div class="search-container">
                 <label for="search-input-given-name">Given Name:</label>
                 <input type="text" name="search-input-given-name" placeholder="Given Name...">
@@ -108,28 +96,6 @@
                 <button type="submit">Search</button>
             </div>
         </form>
-
-        <!-- Filtered Data Table -->
-        {% if data is not none %}
-            <table>
-                <thead>
-                    <tr>
-                        {% for column in columns %}
-                            <th>{{ column }}</th>
-                        {% endfor %}
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for row in data.itertuples() %}
-                        <tr>
-                            {% for value in row[1:] %}
-                                <td>{{ value }}</td>
-                            {% endfor %}
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        {% endif %}
 
         <!-- More content -->
         <p>More content on my page.</p>
