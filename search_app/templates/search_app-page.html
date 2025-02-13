@@ -13,26 +13,43 @@
         }
         .search-container {
             display: grid;
-            grid-template-columns: 100px 1fr;
+            grid-template-columns: 110px 1fr;
             gap: 15px 10px;
             max-width: 400px;
-            margin: 5px auto;
+            margin: 50px auto;
             background-color: white;
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .search-container input, .search-container select {
+        .search-container input[type="text"] {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 14px;
         }
+        .boxfix {
+            grid-column: 1 / span 2;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        .search-container input[type="checkbox"] {
+            transform: scale(1);
+            vertical-align: bottom;
+        }
         .search-container label {
             text-align: right;
-            padding: 5px;
-            padding-right: 5px;
+            padding-top: 9px;
+            padding-right: 2px;
             font-size: 16px;
+            color: #333;
+        }
+        .search-container label[for="checkbox"] {
+            text-align: left;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 5px;
+            font-size: 14px;
             color: #333;
         }
         .search-container button {
@@ -62,8 +79,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Existing Page</h1>
-        <p>This is some existing content on my page.</p>
+        <h1>Welcome to My Page</h1>
+        <p>This is some content on my page.</p>
 
         <!-- CSV Data Filter Form -->
         <form method="POST">
@@ -82,9 +99,11 @@
                 
                 <label for="search-input-year">Year:</label>
                 <input type="text" name="search-input-year" placeholder="Year...">
-
+                
+                <div class="boxfix">
                 <input type="checkbox" name="witness-ind" checked=""> 
                 <label for="checkbox">Exclude event witness data from results</label>
+                </div>
                 
                 <button type="submit">Search</button>
             </div>
