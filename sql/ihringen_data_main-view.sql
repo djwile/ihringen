@@ -17,7 +17,7 @@ CREATE OR REPLACE VIEW ihringen_data_main
     lastnamenorm,
     lastnamecert,
     townoforigin,
-    towncertainty,
+    towncert,
     age,
     jungaltind,
     illegitind,
