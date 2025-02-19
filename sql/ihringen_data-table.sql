@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS ihringen_data
     lastnamenorm character varying(32),
     lastnamecert character varying(1),
     townoforigin character varying(64),
-    towncertainty character varying(1),
+    towncert character varying(1),
     age character varying(64),
     jungaltind character varying(1),
     illegitind boolean,
