@@ -90,27 +90,30 @@ def search():
              "BirthXRef", "MarriageXRef", "DeathXRef", "OtherXRef", "OtherXRefEvent", \
              "Permalink"]] if request.form.get("abridged-data") == "on" else filtered_data
 
+    filtered_rows = filtered_data
+
     if request.method == "POST":
         for field in ["Entry", "Person ID", "Given Name", "Surname", "Town", "Comments", "Year"]:
             search_term = request.form.get(f"search-input-{field.replace(' ', '-').lower()}")
             if search_term:
-                column = field_mapping[field]
+                column = field_mapping.get(field)
                 if field in ["Given Name", "Surname", "Town"]:
                     if "%" in search_term or "_" in search_term:
                         sql_wildcards = search_term.replace("%", ".*").replace("_", ".")
-                        filtered_data = filtered_data[filtered_data[column] \
-                            .str.contains(sql_wildcards, na=False, regex=True)][["EntryNum"]] \
-                            .drop_duplicates(subset=["EntryNum"], keep='first') \
-                            .merge(filtered_data, on='EntryNum', validate="1:m")
+                        filtered_rows = filtered_rows[filtered_rows[column] \
+                            .str.contains(sql_wildcards, na=False, regex=True)]
                     else:
-                        filtered_data = apply_soundex_filter(filtered_data, column, search_term)[["EntryNum"]] \
-                            .drop_duplicates(subset=["EntryNum"], keep='first') \
-                            .merge(filtered_data, on='EntryNum', validate="1:m")
+                        filtered_rows = apply_soundex_filter(filtered_rows, column, search_term)
+                if field in ["Entry", "Person ID", "Year"]:
+                    filtered_rows = filtered_rows[filtered_rows[column] \
+                         .str.match(search_term, na=False, case=False)]
                 else:
-                    filtered_data = filtered_data[filtered_data[column] \
-                        .str.contains(search_term, na=False, case=False)][["EntryNum"]] \
-                        .drop_duplicates(subset=["EntryNum"], keep='first') \
-                        .merge(filtered_data, on='EntryNum', validate="1:m")
+                     filtered_rows = filtered_rows[filtered_rows[column] \
+                         .str.contains(search_term, na=False, case=False)]
+
+        filtered_data = filtered_rows[["EntryNum"]] \
+            .drop_duplicates(subset=["EntryNum"], keep='first') \
+            .merge(filtered_data, on='EntryNum', validate="1:m")
 
     return render_template("search_app-results.html", columns=filtered_data.columns, data=filtered_data)
 
