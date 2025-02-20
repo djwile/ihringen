@@ -2,7 +2,9 @@ from flask import Flask, render_template, request
 import requests
 import pandas as pd
 import io
-#from app import app
+from itertools import groupby
+from operator import itemgetter
+# from app import app
 
 application = Flask(__name__)
 
@@ -80,7 +82,7 @@ def search():
     df = number_to_string(df)
     df = na_fix(df, str, "")
     
-    #change '0' back to False if using boolean instead of string
+    # Change '0' back to False if using boolean instead of string
     filtered_data = df[df["WitnessInd"] == '0'] \
         if request.form.get("witness-ind") == "on" else df
 
@@ -115,7 +117,23 @@ def search():
             .drop_duplicates(subset=["EntryNum"], keep='first') \
             .merge(filtered_data, on='EntryNum', validate="1:m")
 
-    return render_template("search_app-results.html", columns=filtered_data.columns, data=filtered_data)
+    if filtered_data is not None and not filtered_data.empty:
+        # Sort the data by EntryNum to ensure proper grouping
+        filtered_data = filtered_data.sort_values('EntryNum', key=lambda x: x.astype(int))
+
+        # Convert to list of dicts for easier handling in template
+        data_list = filtered_data.to_dict('records')
+
+        # Group the data by EntryNum
+        grouped_data = []
+        for key, group in groupby(data_list, key=itemgetter('EntryNum')):
+            grouped_data.append(list(group))
+    else:
+        grouped_data = []
+
+    return render_template("search_app-results.html", 
+                          columns=filtered_data.columns if filtered_data is not None else [], 
+                          grouped_data=grouped_data)
 
 if __name__ == "__main__":
     application.run(debug=True)
