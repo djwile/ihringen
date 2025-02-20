@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        /* Add styles for alternating entry groups */
+        .entry-group:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .entry-group:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Results</h1>
+
+        {% if grouped_data %}
+            <table>
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                            <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for group in grouped_data %}
+                        {% for item in group %}
+                            <tr class="entry-group">
+                                {% if loop.index0 == 0 %}
+                                    <td rowspan="{{ group|length }}">{{ item['EntryNum'] }}</td>
+                                {% endif %}
+                                {% for column in columns[1:] %}
+                                    <td>{{ item[column] }}</td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
