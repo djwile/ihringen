@@ -4,7 +4,7 @@ import pandas as pd
 import io
 from itertools import groupby
 from operator import itemgetter
-#from datetime import datetime
+from datetime import datetime
 #from app import app
 
 application = Flask(__name__)
@@ -62,6 +62,24 @@ def na_fix(df, dtype, fill):
     return df
 
 
+def get_standesbuch_order(standesbuch):
+    """Give ordinal numbers to Standesbuecher"""
+    standesbuch_order = {
+        '1811-1820': 1,
+        '1821-1828': 2,
+        '1829-1834': 3,
+        '1835-1840': 4,
+        '1841-1845': 5,
+        '1846-1851': 6,
+        '1852-1858': 7,
+        '1859-1864': 8,
+        '1865-1870': 9
+    }
+    if not isinstance(standesbuch, str):
+        return 999  # Put None/NaN values at the end
+    return standesbuch_order.get(standesbuch, ord('z') - ord(standesbuch[0]) if standesbuch else 999)
+
+
 def get_month_value(date_str):
     """Convert the first 3 characters of date string to month number"""
     if not isinstance(date_str, str):
@@ -91,6 +109,10 @@ def get_event_order(event):
     if not isinstance(event, str):
         return 999  # Put None/NaN values at the end
     return event_order.get(event, ord('z') - ord(event[0]) if event else 999)
+
+
+def get_time_order(time):
+    return time[:2]
 
 
 def get_relationship_order(relationship):
@@ -177,7 +199,7 @@ def search():
 
 
     # Define the columns that should span rows when values are identical
-    SPANNING_COLUMNS = ['EntryNum','Year', 'Date', 'Event', 'Permalink']
+    SPANNING_COLUMNS = ['EntryNum', 'Standesbuch', 'Year', 'Bild', 'Date', 'Event', 'Time', 'Permalink']
 
     if filtered_data is not None and not filtered_data.empty:
         # Create sorting helper columns
@@ -185,21 +207,42 @@ def search():
         filtered_data['_event_order'] = filtered_data['Event'].apply(get_event_order)
         filtered_data['_relationship_order'] = filtered_data['Relationship'].apply(get_relationship_order)
 
-        # Sort the data using our custom ordering
-        filtered_data = filtered_data.sort_values(
-            by=[
-                'EntryNum',
-                'Year',
-                '_month_order',
-                '_event_order',
-                '_relationship_order'
-            ],
-            ascending=[True, True, True, True, True],
-            key=lambda x: pd.Series(x).apply(lambda y: pd.to_numeric(y) if pd.notna(y) else pd.NA)
-        )
+        if request.form.get("abridged-data") == "on":
+            # Sort the data using our custom ordering
+            filtered_data = filtered_data.sort_values(
+                by=[
+                    'EntryNum',
+                    'Year',
+                    '_month_order',
+                    '_event_order',
+                    '_relationship_order'
+                ],
+                ascending=[True, True, True, True, True],
+                key=lambda x: pd.Series(x).apply(lambda y: pd.to_numeric(y) if pd.notna(y) else pd.NA)
+            )
+        else:
+            filtered_data['_standesbuch_order'] = filtered_data['Standesbuch'].apply(get_standesbuch_order)
+            filtered_data['_time_order'] = filtered_data['Time'].apply(get_time_order)
+            filtered_data = filtered_data.sort_values(
+                by=[
+                    'EntryNum',
+                    '_standesbuch_order',
+                    'Year',
+                    'Bild',
+                    '_month_order',
+                    '_event_order',
+                    '_time_order',
+                    '_relationship_order'
+                ],
+                ascending=[True, True, True, True, True, True, True, True],
+                key=lambda x: pd.Series(x).apply(lambda y: pd.to_numeric(y) if pd.notna(y) else pd.NA)
+            )
 
         # Drop helper columns
-        filtered_data = filtered_data.drop(columns=['_month_order', '_event_order', '_relationship_order'])
+        if request.form.get("abridged-data") == "on":
+            filtered_data = filtered_data.drop(columns=['_month_order', '_event_order', '_relationship_order'])
+        else:
+            filtered_data = filtered_data.drop(columns=['_standesbuch_order','_month_order','_event_order','_relationship_order'])
 
         # Convert to list of dicts for easier handling in template
         data_list = filtered_data.to_dict('records')
