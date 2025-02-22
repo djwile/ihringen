@@ -4,7 +4,8 @@ import pandas as pd
 import io
 from itertools import groupby
 from operator import itemgetter
-# from app import app
+#from datetime import datetime
+#from app import app
 
 application = Flask(__name__)
 
@@ -13,7 +14,7 @@ CSV_URL = "https://api.github.com/repos/djwile/ihringen/contents/data/ihringen_d
 def fetch_csv_data():
     headers = {
         "Accept": "application/vnd.github.v3.raw",
-        "X-GitHub-Api-Version": "2022-11-28" 
+        "X-GitHub-Api-Version": "2022-11-28"
     }
     response = requests.get(CSV_URL, headers=headers)
     csv_data = response.content.decode('utf-8')
@@ -61,6 +62,64 @@ def na_fix(df, dtype, fill):
     return df
 
 
+def get_month_value(date_str):
+    """Convert the first 3 characters of date string to month number"""
+    if not isinstance(date_str, str):
+        return 13  # Put None/NaN values at the end
+
+    month_map = {
+        'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
+        'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+    }
+    try:
+        return month_map.get(date_str[:3], 13)
+    except:
+        return 13
+
+
+def get_event_order(event):
+    """Define custom event ordering"""
+    event_order = {
+        'Birth': 1,
+        'Bris': 2,
+        'Adoption': 3,
+        'Legitimation': 4,
+        'Wedding': 5,
+        'Death': 6,
+        'Burial': 7
+    }
+    if not isinstance(event, str):
+        return 999  # Put None/NaN values at the end
+    return event_order.get(event, ord('z') - ord(event[0]) if event else 999)
+
+
+def get_relationship_order(relationship):
+    """Define custom relationship ordering"""
+    relationship_order = {
+        'Child': 1,
+        'Death': 2,
+        'Husband': 3,
+        'Wife': 4,
+        'First wife': 5,
+        'Second wife': 6,
+        'First husband': 7,
+        'Father': 8,
+        'Mother': 9,
+        "Father's father": 10,
+        "Mother's father": 11,
+        "Mother's mother": 12,
+        "Husband's father": 13,
+        "Husband's mother": 14,
+        "Wife's father": 15,
+        "Wife's mother": 16,
+        "Wife's first husband": 17,
+        'Witness': 18
+    }
+    if not isinstance(relationship, str):
+        return 999  # Put None/NaN values at the end
+    return relationship_order.get(relationship, ord('z') - ord(relationship[0]) if relationship else 999)
+
+
 @application.route("/", methods=["GET", "POST"])
 def index():
     return render_template("search_app-page.html")
@@ -68,7 +127,6 @@ def index():
 @application.route("/search", methods=["GET", "POST"])
 def search():
     df = fetch_csv_data()
-#    columns = ["FirstNameNorm", "LastNameNorm", "TownOfOrigin", "Notes", "Year"]
     field_mapping = {
         "Entry": "EntryNum",
         "Person ID": "PersonID",
@@ -78,11 +136,11 @@ def search():
         "Comments": "Notes",
         "Year": "Year"
     }
-    
+
     df = number_to_string(df)
     df = na_fix(df, str, "")
-    
-    # Change '0' back to False if using boolean instead of string
+
+    #change '0' back to False if using boolean instead of string
     filtered_data = df[df["WitnessInd"] == '0'] \
         if request.form.get("witness-ind") == "on" else df
 
@@ -117,9 +175,31 @@ def search():
             .drop_duplicates(subset=["EntryNum"], keep='first') \
             .merge(filtered_data, on='EntryNum', validate="1:m")
 
+
+    # Define the columns that should span rows when values are identical
+    SPANNING_COLUMNS = ['EntryNum','Year', 'Date', 'Event', 'Permalink']
+
     if filtered_data is not None and not filtered_data.empty:
-        # Sort the data by EntryNum to ensure proper grouping
-        filtered_data = filtered_data.sort_values('EntryNum', key=lambda x: x.astype(int))
+        # Create sorting helper columns
+        filtered_data['_month_order'] = filtered_data['Date'].apply(get_month_value)
+        filtered_data['_event_order'] = filtered_data['Event'].apply(get_event_order)
+        filtered_data['_relationship_order'] = filtered_data['Relationship'].apply(get_relationship_order)
+
+        # Sort the data using our custom ordering
+        filtered_data = filtered_data.sort_values(
+            by=[
+                'EntryNum',
+                'Year',
+                '_month_order',
+                '_event_order',
+                '_relationship_order'
+            ],
+            ascending=[True, True, True, True, True],
+            key=lambda x: pd.Series(x).apply(lambda y: pd.to_numeric(y) if pd.notna(y) else pd.NA)
+        )
+
+        # Drop helper columns
+        filtered_data = filtered_data.drop(columns=['_month_order', '_event_order', '_relationship_order'])
 
         # Convert to list of dicts for easier handling in template
         data_list = filtered_data.to_dict('records')
@@ -127,13 +207,57 @@ def search():
         # Group the data by EntryNum
         grouped_data = []
         for key, group in groupby(data_list, key=itemgetter('EntryNum')):
-            grouped_data.append(list(group))
+            group_list = list(group)
+
+           # Calculate row spans for specified columns within this EntryNum group
+            group_spans = {}
+
+            # Handle EntryNum first - it always spans the entire group
+            group_spans['EntryNum'] = [len(group_list)] + [0] * (len(group_list) - 1)
+
+            # For each other column that we want to check for spans
+            for column in SPANNING_COLUMNS[1:]:  # Skip EntryNum as we handled it above
+                if column in filtered_data.columns:
+                    spans = [0] * len(group_list)  # Initialize all spans to 0
+                    i = 0
+                    while i < len(group_list):
+                        if spans[i] == 0:  # Only process positions that haven't been spanned yet
+                            # Count how many subsequent rows have the same value
+                            span_count = 1
+                            current_value = group_list[i][column]
+                            j = i + 1
+                            while j < len(group_list) and group_list[j][column] == current_value:
+                                span_count += 1
+                                j += 1
+
+                            # Set the span count at the start of the span
+                            if span_count > 1:
+                                spans[i] = span_count
+                                # Mark subsequent positions as part of this span
+                                for k in range(i + 1, i + span_count):
+                                    spans[k] = 0
+                            else:
+                                spans[i] = 1
+
+                            i = j  # Skip to end of current span
+                        else:
+                            i += 1
+
+                    group_spans[column] = spans
+
+            # Add the spans information to each row
+            for i, row in enumerate(group_list):
+                row['_spans'] = {col: group_spans[col][i] for col in group_spans}
+
+            grouped_data.append(group_list)
+
     else:
         grouped_data = []
 
-    return render_template("search_app-results.html", 
-                          columns=filtered_data.columns if filtered_data is not None else [], 
-                          grouped_data=grouped_data)
+    return render_template("search_app-results.html",
+                         columns=filtered_data.columns if filtered_data is not None else [],
+                         grouped_data=grouped_data,
+                         spanning_columns=SPANNING_COLUMNS)
 
 if __name__ == "__main__":
     application.run(debug=True)
