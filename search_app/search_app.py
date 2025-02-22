@@ -242,7 +242,7 @@ def search():
         if request.form.get("abridged-data") == "on":
             filtered_data = filtered_data.drop(columns=['_month_order', '_event_order', '_relationship_order'])
         else:
-            filtered_data = filtered_data.drop(columns=['_standesbuch_order','_month_order','_event_order','_relationship_order'])
+            filtered_data = filtered_data.drop(columns=['_standesbuch_order','_month_order','_event_order','_time_order','_relationship_order'])
 
         # Convert to list of dicts for easier handling in template
         data_list = filtered_data.to_dict('records')
