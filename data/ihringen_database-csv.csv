@@ -88,7 +88,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 18,1811-1820,137,1814,01 Jun,15:00,Wedding,M,0,0,1,Witness,Jacob,A,Meyer,A,Ihringen,A,,,,,,,1200521,,,583,,,,,Jacob,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
 19,1811-1820,137,1814,16 Oct,21:00,Death,M,1,0,0,Death,Samuel,A,Weil,A,Stühlingen,A,77 years,A,,,,,1401911,,,,,,,1,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
 19,1811-1820,137,1814,16 Oct,21:00,Death,F,0,1,0,Wife,Scheine,A,Geismar,A,Ihringen,I,,,,,,,1401921,,,219,,,,,Schöne,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
-19,1811-1820,137,1814,16 Oct,21:00,Death,M,0,1,0,Father,Samuel,A,Weil,A,Ihringen,A,,,,,,,1401922,,,,,,,1,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
+19,1811-1820,137,1814,16 Oct,21:00,Death,M,0,1,0,Father,Samuel,A,Weil,A,Stühlingen,K,,,,,,,1401922,,,,,,,1,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
 19,1811-1820,137,1814,17 Oct,17:00,Burial,M,0,0,1,Witness,Nathan,A,Bloch,A,Ihringen,A,,,,,"""Vorsteher""",,1100134,,,119,,,,,Nathan,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
 19,1811-1820,137,1814,17 Oct,17:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,724,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-137
 20,1811-1820,164,1815,27 Jan,09:00,Birth,F,1,0,0,Child,Judith,A,Heilbronner,A,Ihringen,A,Newborn,,,,,-in suffix,1502011,,539,552,,,,,Judith,Heilbronnerin,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-164
