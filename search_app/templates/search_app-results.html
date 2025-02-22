@@ -49,11 +49,14 @@
                     {% for group in grouped_data %}
                         {% for item in group %}
                             <tr class="entry-group">
-                                {% if loop.index0 == 0 %}
-                                    <td rowspan="{{ group|length }}">{{ item['EntryNum'] }}</td>
-                                {% endif %}
-                                {% for column in columns[1:] %}
-                                    <td>{{ item[column] }}</td>
+                                {% for column in columns %}
+                                    {% if column in spanning_columns and '_spans' in item and column in item['_spans'] %}
+                                        {% if item['_spans'][column] > 0 %}
+                                            <td rowspan="{{ item['_spans'][column] }}">{{ item[column] }}</td>
+                                        {% endif %}
+                                    {% elif column not in spanning_columns %}
+                                        <td>{{ item[column] }}</td>
+                                    {% endif %}
                                 {% endfor %}
                             </tr>
                         {% endfor %}
