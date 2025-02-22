@@ -23,12 +23,14 @@
             padding: 10px;
             text-align: left;
         }
-        /* Add styles for alternating entry groups */
-        .entry-group:nth-child(even) {
+            .entry-group-even tr {
             background-color: #f8f8f8;
         }
-        .entry-group:nth-child(odd) {
+        .entry-group-odd tr {
             background-color: #ffffff;
+        }
+        td[rowspan] {
+            background-color: rgba(0, 0, 0, 0.02);
         }
     </style>
 </head>
@@ -47,19 +49,22 @@
                 </thead>
                 <tbody>
                     {% for group in grouped_data %}
-                        {% for item in group %}
-                            <tr class="entry-group">
-                                {% for column in columns %}
-                                    {% if column in spanning_columns and '_spans' in item and column in item['_spans'] %}
-                                        {% if item['_spans'][column] > 0 %}
-                                            <td rowspan="{{ item['_spans'][column] }}">{{ item[column] }}</td>
+                        {# Add tbody for each group with alternating class #}
+                        <tbody class="entry-group-{{ loop.index0 % 2 and 'odd' or 'even' }}">
+                            {% for item in group %}
+                                <tr>
+                                    {% for column in columns %}
+                                        {% if column in spanning_columns and '_spans' in item and column in item['_spans'] %}
+                                            {% if item['_spans'][column] > 0 %}
+                                                <td rowspan="{{ item['_spans'][column] }}">{{ item[column] }}</td>
+                                            {% endif %}
+                                        {% elif column not in spanning_columns %}
+                                            <td>{{ item[column] }}</td>
                                         {% endif %}
-                                    {% elif column not in spanning_columns %}
-                                        <td>{{ item[column] }}</td>
-                                    {% endif %}
-                                {% endfor %}
-                            </tr>
-                        {% endfor %}
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
                     {% endfor %}
                 </tbody>
             </table>
