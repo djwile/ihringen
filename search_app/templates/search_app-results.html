@@ -65,7 +65,7 @@
                                         {% if column in spanning_columns and '_spans' in item and column in item['_spans'] %}
                                             {% if item['_spans'][column] > 0 %}
                                                 {% if column == 'Permalink' %}
-                                                    <td rowspan="{{ item['_spans'][column] }}"><a href="{{ item[column] }}" target="_blank">Scanned image</a></td>
+                                                    <td rowspan="{{ item['_spans'][column] }}"><a href="{{ item[column] }}" target="_blank">Scanned record</a></td>
                                                 {% else %}
                                                     <td rowspan="{{ item['_spans'][column] }}">{{ item[column] }}</td>
                                                 {% endif %}
