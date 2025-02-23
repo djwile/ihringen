@@ -186,7 +186,7 @@ def search():
                             .str.contains(sql_wildcards, na=False, regex=True)]
                     else:
                         filtered_rows = apply_soundex_filter(filtered_rows, column, search_term)
-                if field in ["Entry", "Person ID", "Year"]:
+                elif field in ["Entry", "Person ID", "Year"]:
                     filtered_rows = filtered_rows[filtered_rows[column] \
                          .str.match(search_term, na=False, case=False)]
                 else:
