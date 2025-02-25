@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}About - Ihringen Jewish records{% endblock %}
+
+{% block additional_styles %}
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .container h1 {
+            margin-left: 40px;
+        }
+	.container p {
+	    line-height: 1.5;
+	    padding-bottom: 5px;
+	}
+	.image-block {
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 5px;
+	}
+	.text-block p {
+	    margin-left: 40px;
+	    margin-bottom: 0;
+	    margin-top: 5px;
+            line-height: 1;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	}
+	.footnote p {
+	    margin-top: 40px;
+	    line-height: 1; 
+	    font-size: 0.875em; 
+	}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <h1>About the Standesbücher</h1>
+        <!-- Add your about page content here -->
+	    <h3>Sources</h3>
+	    <p>Beginning in 1810, the Grand Duchy of Baden ordered local Catholic parishes and Protestant congregations to keep <a href="https://www.landesarchiv-bw.de/de/recherche/rechercheratgeber/59009" target="_blank">Standesbücher</a>, or civil registries of each birth, marriage, and death in the community during the year. The priest or pastor of the local majority religion was generally also responsible for recording these vital records for minority religious communities, such as Calvinists, Mennonites, or Jews, in the town as well. After January 1870, this resposibility was assumed by the state itself.</p>
+	    <p>These registries are kept in the <a href="https://www.landesarchiv-bw.de/" target"_blank">Landesarchiv Baden-Württemberg</a>. Miraculously, every page from every book from every town has been scanned and placed online, although few have been indexed.Records from northern Baden are kept at the archive in <a href="https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=12390" target="_blank">Karlsruhe</a>, while records from southern Baden are kept in <a href="https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=10028" target="_blank">Freiburg</a>, a split maintained online. The records for Ihringen, in the southern half of Baden, can be found in the <a href="https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=10028&klassi=&anzeigeKlassi=003" target="_blank">Breisach district</a> directory within the Freiburg archive. The Jewish community's records are collated by year within the much larger Protestant community's records (the 9 books numbered 487 through 495).</p>
+	    <h3>Record entries</h3>
+	    <p>Each entry is handwritten in a cursive script particular to German-speaking lands called <i>Kurrentschrift</i>, which is extremely difficult to read without prior familiarity. A typical example of a birth record in its original handwriting is reproduced below.</p>
+	    <div class="image-block">
+                <img src="{{ url_for('static', filename='kurrentschrift01.jpg') }}" alt="An example of a handwritten record entry from the Ihringen Standesbücher.">
+            </div>
+	    <p>The German original (with the parts of the entry that are indexed on this site's dataset in bold) says:</p>
+	    <div class="text-block">
+		    <p><i>Im Jahr <b>Eintausend achthundert vier und dreißig</b> den <b>neun und zwanzigsten März</b></i><p> 
+		    <p><i><b>früh fünf Uhr</b> wurde in der israelitischen Gemeinde dahier zu <b>Ihringen ehelich</b></i></p>
+		    <p><i>geboren ein <b>Sohn</b>, <b>Nathan</b>, Vater ist <b>Jacob Meier</b>, <b>Schutzbürger</b> dahier,</i></p>
+		    <p><i>Mutter ist <b>Elka geb: Gütschel</b>. Zeugen sind: <b>Herz Günzburger</b>,</i></p>
+		    <p><i>dermaliger <b>Vorsteher</b> dahier; <b>Salomon Geismar</b>, <b>Schutzbürger</b> dahier.</i></p>
+		    <p><i><span style="margin-left: 30ch"> Ernst Christian Wilhelm, Pfarrer.</span></i></p>
+	    </div>
+	    <p>Translated into English:</p>
+            <div class="text-block">
+		    <p>In the year <b>one thousand eight hundred thirty-four</b>, on the <b>twenty-ninth of March</b><p>
+		    <p>at <b>five o'clock in the morning</b> in the Israelite community here at <b>Ihringen</b> was <b>legitimately</b></p>
+		    <p>born a <b>son</b>, <b>Nathan</b>, father is <b>Jacob Meier</b>, <b>protected resident</b> here,</p>
+		    <p>mother is <b>Elka born Gütschel</b>. Witnesses are: <b>Herz Günzburger</b>,</p>
+		    <p>current <b>community head</b>; <b>Salomon Geismar</b>, <b>protected resident</b> here.</p>
+                    <p><span style="margin-left: 30ch">Ernst Christian Wilhelm, Pastor.</span></p>
+            </div>
+	    <p>This record is Entry 208 in our dataset.</p>
+	<h3>Community history</h3>
+	    <p>A very short and unnuanced history of the Jews of Baden follows this general outline: Jews in Germany largely lived in urban centers from the medieval period until the early modern era, when various social movements and the rise of merchant guilds excluded them from the opportunities previously available to them. Cash-strapped rural lords, seeing a population they could squeeze for tax money, allowed them to live in their communities under their protection provided they paid for letters of protection. Depending on the lord, these protection payments could be more or less burdensome.</p>
+	    <p>Despite being largely unable to buy land, Jews eked out an economic existence in these rural towns as livestock traders, textile traders, butchers, wine sellers, and small creditors, among other occupations. Local Christian communities vacillated between viewing them with acceptance and antagonism. Only in 1862 did Baden's Jews finally win their emancipation&mdash;full legal equality.</p>
+	    <p>Jews first arrived in Ihringen in 1716. The Jewish population peaked in 1852, numbering 263 people. The greater freedom of movement that came with emancipation saw the population begin to shrink, and internal and external migration pressures saw the number of Jews decrease to 125 by 1925. In 1933, 98 Jews still lived in Ihringen. The Ihringen synagogue, which had been built in 1864 and renovated in 1927 with money from three brothers who founded a successful menswear clothing company in the United States, was destroyed on Kristallnacht in 1938. 68 Jews either living in or originally from Ihringen were murdered in the Holocaust.<sup><a href="#footnote1">1</a></sup></p>
+	<div class=footnote>
+<p id="footnote1"><sup>1</sup>Population numbers and synagogue history taken from <a href="https://www.alemannia-judaica.de/ihringen_synagoge.htm" target="_blank">Alemannia Judaica: Ihringen Synagogue</a>.</p>
+        </div>
+    </div>
+{% endblock %}
