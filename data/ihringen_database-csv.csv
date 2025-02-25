@@ -490,7 +490,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 104,1821-1828,275,1827,26 Dec,,Wedding,M,0,1,0,Husband's father,Alexander,A,Bloch,A,Kirchen,C,,,,"""Schutzbürger""",,,2710421,,,,,,,1,Alexander,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 104,1821-1828,275,1827,26 Dec,,Wedding,F,0,1,0,Husband's mother,Maria,A,Bloch,A,Kirchen,I,,,,,,,2710422,,,,,,,,Maria,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 104,1821-1828,275,1827,26 Dec,,Wedding,M,0,1,0,Wife's father,David,A,Günzburger,A,Ihringen,A,,,,,,,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
-104,1821-1828,275,1827,26 Dec,,Wedding,F,0,1,0,Wife's mother,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2710424,,,701,,,,,Vogel,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
+104,1821-1828,275,1827,26 Dec,,Wedding,F,0,1,0,Wife's mother,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2206722,,,701,,,,,Vogel,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 104,1821-1828,275,1827,26 Dec,,Wedding,M,0,0,1,Witness,David,I,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,,not given,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 104,1821-1828,275,1827,26 Dec,,Wedding,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 104,1821-1828,275,1827,26 Dec,,Wedding,M,0,0,1,Witness,Marx,A,Guggenheimer,A,Ihringen,A,,,,"""Schutzbürger""",,,2407811,,78,758,,,,,Marx,Gugenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
@@ -511,7 +511,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 107,1821-1828,276,1827,17 Jul,,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 108,1821-1828,276,1827,21 Jul,19:00,Death,M,1,0,0,Death,Samuel,A,Heilbronner,A,Ihringen,A,79 years,,,"""Schutzbürger""",,"Date of death given in this Entry as 31 July, but date of burial given as 23 July, therefore date of death revised to 21 July to harmonize discrepancy",1502932,,,,,,,1,Samuel,Heilbrunner,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 108,1821-1828,276,1827,21 Jul,19:00,Death,F,0,1,0,Wife,Rose,A,Geismar,A,Ihringen,I,,,,,,,2710821,,,206,,,,,Rosa,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
-108,1821-1828,276,1827,21 Jul,19:00,Death,M,0,1,0,Father,Feisel,A,Heilbronner,A,Ihringen,A,,,,"""Schutzbürger""",,,2710822,,,,,,,1,Feisel,Heilbrunner,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
+108,1821-1828,276,1827,21 Jul,19:00,Death,M,0,1,0,Father,Feisel,A,Heilbronner,A,Ihringen,A,,,,"""Schutzbürger""",,,1200621,,,221,,,,1,Feisel,Heilbrunner,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 108,1821-1828,276,1827,21 Jul,19:00,Death,F,0,1,0,Mother,Rachel,A,Geismar,A,Ihringen,I,,,,,,,2710823,,,,,,,1,Rachel,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 108,1821-1828,276,1827,23 Jul,,Burial,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 108,1821-1828,276,1827,23 Jul,,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
@@ -1772,7 +1772,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 339,1841-1845,65,1841,14 Jun,08:00,Burial,M,0,0,1,Witness,Marx Levi,K,Felsenstein,A,Ihringen,A,,,,"""Schutzbürger""",,,3214221,,145,,,,,,Marx,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
 339,1841-1845,65,1841,14 Jun,08:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,"""Schutzbürger""","""Vorsänger""",,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
 340,1841-1845,65,1841,30 Dec,04:00,Death,M,1,0,0,Death,David,A,Günzburger,A,Ihringen,A,76 years,,,"""Schutzbürger""","""Rabbiner""",,1100133,,,,,,,1,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
-340,1841-1845,65,1841,30 Dec,04:00,Death,F,0,1,0,Wife,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2710424,,,701,,,,,Vogel,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
+340,1841-1845,65,1841,30 Dec,04:00,Death,F,0,1,0,Wife,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2206722,,,701,,,,,Vogel,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
 340,1841-1845,65,1841,30 Dec,04:00,Death,M,0,1,0,Father,Marx,A,Günzburger,A,Breisach,A,,,,"""Schutzbürger""",,,5134022,,,,,,,1,Marx,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
 340,1841-1845,65,1841,30 Dec,04:00,Death,F,0,1,0,Mother,Ester,A,Bikert,B,Breisach,I,,,,,,,5134023,,,,,,,1,Esther,Bigard,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
 340,1841-1845,65,1841,31 Dec,15:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,"""Schutzbürger""","""Vorsänger""",,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-65
@@ -2423,7 +2423,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 458,1846-1851,209,1849,04 Feb,15:00,Death,F,1,0,0,Death,Judith,A,Günzburger,A,Ihringen,I,43 years,,,,,,2710412,,104,,,,,1,Judith,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
 458,1846-1851,209,1849,04 Feb,15:00,Death,M,0,1,0,Husband,Julius,A,Bloch,A,Kirchen,I,,,,"""Schutzbürger""",,,2710411,,104,,,,,,Julius,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
 458,1846-1851,209,1849,04 Feb,15:00,Death,M,0,1,0,Father,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabiner""",,1100133,,,340,,,,1,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
-458,1846-1851,209,1849,04 Feb,15:00,Death,F,0,1,0,Mother,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2710424,,,701,,,,,Vögele,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
+458,1846-1851,209,1849,04 Feb,15:00,Death,F,0,1,0,Mother,Vögele,A,Geismar,A,Ihringen,I,,,,,,,2206722,,,701,,,,,Vögele,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
 458,1846-1851,209,1849,06 Feb,15:00,Burial,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger""",,ID guess,1200831,,,650,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
 458,1846-1851,209,1849,06 Feb,15:00,Burial,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,A,,,,"""Schutzbürger""",,,2206411,64,385,,,,,,Maier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
 459,1846-1851,209,1849,09 Feb,08:00,Death,M,1,0,0,Death,Gustav,A,Blum,A,Ihringen,A,3 years 9 months 7 days,,,,,,5539711,397,,,,,,1,Gustav,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-209
@@ -3765,7 +3765,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 700,1865-1870,158,1866,04 Apr,16:00,Death,F,0,1,0,Mother,Rebekka,A,Geismar,A,Ihringen,I,,,,,,,3213222,,,759,,,,,Rebecka,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
 700,1865-1870,158,1866,06 Apr,06:00,Burial,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,A,,,,,"""israelitischer Vorsteher""",,2206411,64,385,,,,,,Meier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
 700,1865-1870,158,1866,06 Apr,06:00,Burial,M,0,0,1,Witness,Israel,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,3316832,,228,,,,,,Israel,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
-701,1865-1870,158,1866,18 Apr,13:00,Death,F,1,0,0,Death,Vögele,A,Geismar,K,Ihringen,A,85 years,,,,,"""Wittwe""",2710424,,,,,,,1,Vögel,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
+701,1865-1870,158,1866,18 Apr,13:00,Death,F,1,0,0,Death,Vögele,A,Geismar,K,Ihringen,A,85 years,,,,,"""Wittwe""",2206722,,,,,,,1,Vögel,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
 701,1865-1870,158,1866,18 Apr,13:00,Death,M,0,1,0,Husband,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,1,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
 701,1865-1870,158,1866,18 Apr,13:00,Death,M,0,1,0,Father,Heinrich,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger"" ","""Handelsmann""",,1100232,,,129,,,,1,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
 701,1865-1870,158,1866,18 Apr,13:00,Death,F,0,1,0,Mother,Sara,A,Wolf,K,Ihringen,I,,,,,,,3112922,,,,,,,1,Sara,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-158
