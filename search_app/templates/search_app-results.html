@@ -7,9 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+	    background-color: #f6f7f1;
         }
         .container {
             margin: 20px;
+        }
+	.container h1 {
+            margin-left: 40px;
         }
         table {
             width: 100%;
@@ -18,6 +22,7 @@
         }
         table, th, td {
             border: 1px solid black;
+	    font-size: 0.875em;
         }
         td {
             padding: 5px;
@@ -68,8 +73,8 @@
                                                     <td rowspan="{{ item['_spans'][column] }}"><a href="{{ item[column] }}" target="_blank">Scanned record</a></td>
                                                 {% else %}
                                                     <td rowspan="{{ item['_spans'][column] }}">{{ item[column] }}</td>
-                                                {% endif %}
-                                            {% endif %}
+                                                {% endif %} 
+					    {% endif %}
                                         {% elif column not in spanning_columns %}
                                             <td>{{ item[column] }}</td>
                                         {% endif %}
