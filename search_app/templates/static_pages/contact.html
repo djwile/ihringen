@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Ihringen Jewish records{% endblock %}
+
+{% block additional_styles %}
+
+<style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .container h1 {
+            margin-left: 40px;
+        }
+        .container p {
+            line-height: 1.5;
+        }
+	ul {
+	    list-style-type: none;
+	    line-height: 1.5;
+	}
+</style>
+
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <h1>Contact information</h1>
+        <p>Please reach out to me if you have any questions about the data or the site, if you'd like the search form to do something it doesn't do yet, or if you notice any issues with functionality.</p>
+        <ul>
+            <li><b>Email</b>: <a href="mailto:dwile@ihringenjewishrecords.org">dwile@ihringenjewishrecords.org</a></li>
+	    <li><b>Bluesky</b>: <a href="https://bsky.app/profile/wiled.bsky.social" target="_blank">@wiled.bsky.social</a></li>
+        </ul>
+	<p>The raw data itself is available on my <a href="https://github.com/djwile/ihringen/tree/78243111515549b0d9b9034b56d791085b953a00/data" target="_blank">GitHub repo for this project</a> in both .csv and .xlsx form. This data is available to all researchers who might find it interesting.</p>
+	<p>If you are interested in my other genealogical research, please visit my blog, <a href="https://djwile.wordpress.com" target="_blank">Genealogy and Its Discontents</a></p>
+    </div>
+{% endblock %}

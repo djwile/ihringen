@@ -1,0 +1,288 @@
+{% extends "base.html" %}
+
+{% block title %}Data dictionary - Ihringen Jewish records{% endblock %}
+
+{% block additional_styles %}
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .container h1 {
+            margin-left: 40px;
+        }
+	.container p {
+	    line-height: 1.5;
+	}
+	table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td {
+            padding: 5px;
+	    padding-left: 10px;
+            padding-right: 20px;
+            text-align: left;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+        th {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffe066;
+            border-block: thick solid black;
+        }
+	ul {
+	    list-style-type: none;
+            line-height: 1.5;
+	}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <h1>Data dictionary</h1>
+        <!-- Add your about page content here -->
+        <p>Rows in <b>bold</b> contain definitions for columns that are included in the abridged search. To search for the non-bold data fields, uncheck the checkbox labeled "Show only abridged data in results."</p>   
+  <table>
+ <tr>
+  <th>Column name</th>
+  <th>Meaning</th>
+  <th>Definition</th>
+ </tr>
+ <tr>
+  <td><b>EntryNum</b></td>
+  <td><b>Entry number</b></td>
+  <td><b>Counter for each distinct event</b></td>
+ </tr>
+ <tr>
+  <td><b>Standesbuch</b></td>
+  <td><b>Standesbuch</b></td>
+  <td><b>Year range covered by the specific record book</b></td>
+ </tr>
+ <tr>
+  <td><b>Bild</b></td>
+  <td><b>Image number</b></td>
+  <td><b>Image number within the specific record book as arranged in the Baden-Württemberg online digitized archives</b></td>
+ </tr>
+ <tr>
+  <td><b>Year</b></td>
+  <td><b>Year</b></td>
+  <td><b>Year of event</b></td>
+ </tr>
+ <tr>
+  <td><b>Date</b></td>
+  <td><b>Date</b></td>
+  <td><b>Month and day of event, formatted mmm-dd</b></td>
+ </tr>
+ <tr>
+  <td>Time</td>
+  <td>Time</td>
+  <td>Time of event (24 hour clock)</td>
+ </tr>
+ <tr>
+  <td><b>Event</b></td>
+  <td><b>Event</b></td>
+  <td><b>Type of event</b></td>
+ </tr>
+ <tr>
+  <td><b>Sex</b></td>
+  <td><b>Sex</b></td>
+  <td><b>Biological sex of the named individual</b></td>
+ </tr>
+ <tr>
+  <td><b>PrimaryInd</b></td>
+  <td><b>Primary indicator</b></td>
+  <td><b>Indicates if the named individual is the individual whose event is being recorded</b></td>
+ </tr>
+ <tr>
+  <td>SecondaryInd</td>
+  <td>Secondary indicator</td>
+  <td>Indicates if the individual is named as a direct relative of the primary individual</td>
+ </tr>
+ <tr>
+  <td>WitnessInd</td>
+  <td>Witness indicator</td>
+  <td>Indicates if the named individual is listed as a witness to the event</td>
+ </tr>
+ <tr>	
+  <td><b>Relationship</b></td>
+  <td><b>Relationship</b></td>
+  <td><b>Relationship of the named individual to the primary individual</b></td>
+ </tr>
+ <tr>
+  <td><b>FirstNameNorm</b></td>
+  <td><b>First name normalized</b></td>
+  <td><b>An arbitrarily chosen spelling used for every mention of a unique individual's given name regardless of the spelling on the specific document</b></td>
+ </tr>
+ <tr>
+  <td>FirstNameCert</td>
+  <td>First name certainty</td>
+  <td>One letter code indicating the indexer's subjective certainty that the given name I have entered is the name recorded to account for legibility, defined in Appendix</td>
+ </tr>
+ <tr>
+  <td><b>LastNameNorm</b></td>
+  <td><b>Last name normalized</b></td>
+  <td><b>An arbitrarily chosen spelling used for every mention of a unique individual's surname regardless of the spelling on the specific document</b></td>
+ </tr>
+ <tr>
+  <td>LastNameCert</td>
+  <td>Last name certainty</td>
+  <td>One letter code indicating the indexer's subjective certainty that the surname I have entered is the name recorded to account for legibility, defined in Appendix</td>
+ </tr>
+ <tr>
+  <td><b>TownOfOrigin</b></td>
+  <td><b>Town of origin</b></td>
+  <td><b>The town where the individual either was born or resides depending on known information</b></td>
+ </tr>
+ <tr>
+  <td>TownCert</td>
+  <td>Town certainty</td>
+  <td>One letter code indicating the indexer's subjective certainty that the town I have entered is the town recorded to account for legibility, defined in Appendix</td>
+ </tr>
+ <tr>
+  <td><b>Age</b></td>
+  <td><b>Age</b></td>
+  <td><b>Age of the named individual if explicitly mentioned</b></td>
+ </tr>
+ <tr>
+  <td>JungAltInd</td>
+  <td>Jung-Alt indicator</td>
+  <td>Indicates if the name is followed by &quot;jung&quot; (J)
+  or &quot;alt&quot; (A) to differentiate between two living people with the same name</td>
+ </tr>
+ <tr>
+  <td>IllegitInd</td>
+  <td>Illegitimate indicator</td>
+  <td>Indicates if the birth is recorded as illegitimate</td>
+ </tr>
+ <tr>
+  <td><b>Status</b></td>
+  <td><b>Status</b></td>
+  <td><b>Terms quoted within the event entry denoting the individual's marital or citizenship status</b></td>
+ </tr>
+ <tr>
+  <td><b>Occupation</b></td>
+  <td><b>Occupation</b></td>
+  <td><b>Terms quoted within the event entry denoting the individual's occupation</b></td>
+ </tr>
+ <tr>
+  <td><b>Notes</b></td>
+  <td><b>Notes</b></td>
+  <td><b>Interesting excerpts quoted from the record entry regarding the individual, comments about noteworthy aspects of the record, or facts about the individual determined from outside sources</b></td>
+ </tr>
+ <tr>
+  <td><b>PersonID</b></td>
+  <td><b>Person ID<b></td>
+  <td><b>A unique indentifier for each named individual created by the formula defined in the Appendix</b></td>
+ </tr>
+ <tr>
+  <td><b>BirthXRef</b></td>
+  <td><b>Birth cross reference</b></td>
+  <td><b>A cross reference to the individual's birth record if found within the Ihringen record books</b></td>
+ </tr>
+ <tr>
+  <td><b>MarriageXRef</b></td>
+  <td><b>Marriage cross reference</b></td>
+  <td><b>A cross reference to the individual's marriage record if found within the Ihringen record books</b></td>
+ </tr>
+ <tr>
+  <td><b>DeathXRef</b></td>
+  <td><b>Death cross reference</b></td>
+  <td><b>A cross reference to the individual's death record if found within the Ihringen record books</b></td>
+ </tr>
+ <tr>
+  <td><b>OtherXRef</b></td>
+  <td><b>Other cross reference</b></td>
+  <td><b>A cross reference to some secondary records involving the individual found within the Ihringen record books</b></td>
+ </tr>
+ <tr>
+  <td><b>OtherXRefEvent</b></td>
+  <td><b>Other cross reference event</b></td>
+  <td><b>An explanation of the Other cross reference event type and secondary relationship</b></td>
+ </tr>
+ <tr>
+  <td>NonJewInd</td>
+  <td>Non-Jew indicator</td>
+  <td>Indicates if the named individual is certainly not Jewish</td>
+ </tr>
+ <tr>
+  <td>DeadInd</td>
+  <td>Dead indicator</td>
+  <td>Indicates if the named individual is certainly already dead at the time of the event entry</td>
+ </tr>
+ <tr>
+  <td>FirstNameXct</td>
+  <td>First name exact</td>
+  <td>The exact spelling of the named individual's given name on the specific document as I (David Wile) read it</td>
+ </tr>
+ <tr>
+  <td>LastNameXct</td>
+  <td>Last name exact</td>
+  <td>The exact spelling of the named individual's surname on the specific document as I (David Wile) read it</td>
+ </tr>
+ <tr>
+  <td>MistakenNameInd</td>
+  <td>Mistaken name indicator</td>
+  <td>Indicates that the name on the record is not merely an alternative name for the individual but a misunderstanding</td>
+ </tr>
+ <tr>
+  <td><b>Permalink</b></td>
+  <td><b>Permalink</b></td>
+  <td><b>Link to the digitized record in the Baden-Württemberg online archives</b></td>
+ </tr>
+</table>
+
+    <h1>Appendix</h1>
+    <h3>I. Certainty values</h3>
+        <ul>
+	    <li><b>A</b>: Fairly certain</li>
+	    <li><b>B</b>: Perhaps a letter or so off, but close</li>
+	    <li><b>C</b>: Almost guessing</li>
+	    <li><b>I</b>: For towns&mdash;known from other entries, or Ihringen if never show otherwise. For surnames&mdash;married name if no maiden name given or otherwise known</li>
+	    <li><b>K</b>: Surnames only&mdash;corrected if provided name is incorrect, maiden name if known from other entries</li>
+	</ul>
+    <h3>II. Non-standard names</h3>
+        <ul>
+	    <li><b>Not given</b>: Given name or surname of an adult that has not been provided</li>
+	    <li><b>Unnamed</b>: Given name of an infant who died before naming</li>
+	</ul>
+    <h3>III. PersonID composition</h3>
+        <p>To ensure unique PersonID identifiers for each individual, the PersonID is composed based on the entry and the location within that entry where the individual is first mentioned.</p>
+        <ul>
+            <li><b>First character</b>: Standesbuch number (1-9)</li>
+            <li><b>Second character</b>: Year count within the Standesbuch (0 indicates the 10th year)</li>
+            <li><b>Third-fifth characters</b>: Entry number</li>
+            <li><b>Sixth character</b>: Primary (1)/Secondary (2)/Witness (3) indicator</li>
+	    <li><b>Seventh character</b>: Counter</li>
+        </ul>
+	<p>Therefore, we know from Lazarus Wilmersdorf's PersonID 1401732 that his first mention occurs in the 1st Standesbuch (1811-1820), during the 4th year of that Standesbuch (that is, 1814), Entry 17. He is a witness on that record, and the 2nd witness mentioned.</p>
+        <p>Standesbuch numbers are as follows:</p>
+	<ul>
+	    <li><b>1</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475838" target="_blank">1811-1820 (L 10 Nr. 487)</a></li>
+            <li><b>2</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475839" target="_blank">1821-1828 (L 10 Nr. 488)</a></li>
+            <li><b>3</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475840" target="_blank">1829-1834 (L 10 Nr. 489)</a></li>
+            <li><b>4</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475841" target="_blank">1835-1840 (L 10 Nr. 490)</a></li>
+            <li><b>5</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475842" target="_blank">1841-1845 (L 10 Nr. 491)</a></li>
+            <li><b>6</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475843" target="_blank">1846-1851 (L 10 Nr. 492)</a></li>
+            <li><b>7</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475844" target="_blank">1852-1858 (L 10 Nr. 493)</a></li>
+            <li><b>8</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475845" target="_blank">1859-1864 (L 10 Nr. 494)</a></li>
+            <li><b>9</b>: <a href="http://www.landesarchiv-bw.de/plink/?f=5-475846" target="_blank">1865-1870 (L 10 Nr. 495)</a></li>
+        </ul>
+        <h3>IV. Notes on Notes</h3>
+	<p>A common note, especially in earlier records, that might be hard to parse is "-in suffix." This comment marks where a woman's surname has appended to it the German feminization suffix "-in", which functions similarly to English "-ess." Often this version of the name is only written in the margin (the record margin often contains the family name of the primary person involved in the event; see the <a href="{{ url_for('about') }}" target="_blank">About</a> page for an example that uses the record margin this way).</p>
+	<p>Another common note, and one that only appears on witness data, is "ID guess." In these cases, it was impossible to determine from the witness data which specific person among multiple contemporaries with the same name was intended.</p>
+	<p>Some notes include links to other vital records recorded in other towns' Standesbücher or to grave sites in other town's cemeteries. These links are by no means exhaustive. Generally they have only been provided when they have coincidentally popped up in the course of other research, or when wedding records list an exact birth date and location. The number of these links should expand in time as further coincidences occur.</p>
+    </div>
+{% endblock %}
