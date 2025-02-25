@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with CSV Data Filter</title>
+{% extends "base.html" %}
+
+{% block title %}Ihringen Jewish records search{% endblock %}
+
+{% block additional_styles %}
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +10,15 @@
         .container {
             margin: 20px;
         }
+	.container h1 {
+	    margin-left: 40px;
+	}
+	.container p{
+	    line-height: 1.5;
+	}
+	.textbox {
+	    padding-bottom: 5px;
+	}
         .search-container {
             display: grid;
             grid-template-columns: 110px 1fr;
@@ -21,6 +29,12 @@
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-text {
+            grid-column: 1 / span 2;
+            padding: 5px;
+            padding-left: 20px;
+            font-weight: bold;
         }
         .search-container input[type="text"] {
             padding: 10px;
@@ -44,9 +58,9 @@
             font-size: 16px;
             color: #333;
         }
-        .search-container label[for="checkbox"] {
+        .search-container label[for="abridged-data"], label[for="witness-ind"] {
             text-align: left;
-            padding: 5px;
+            padding: 0;
             padding-left: 20px;
             padding-right: 5px;
             font-size: 14px;
@@ -63,16 +77,62 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+        table {
+            margin-left: auto;
+	    margin-right: auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+	}
+        td {
+            padding: 5px;
+	    padding-right: 20px;
+	    text-align: right;
+        }
+	td:nth-child(1) {
+	    padding-left: 10px;
+            text-align: left;
+	}
+	tr:nth-child(odd) {
+	    background-color: #ffffff;
+	}
+	tr:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+        th {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffe066;
+            border-block: thick solid black;
+        }
     </style>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>This is some content on my page.</p>
+        <h1>Search the Ihringen Jewish Standesbücher</h1>
+        <p>The Baden Standesbücher, or civil status registries, attempted to record every birth, marriage, and death in the Grand Duchy of Baden from 1810 to 1870. The Landesarchiv (State Archive) Baden-Württemberg has scanned these registries in their entirety and made them available online. This site contains the records from the small Jewish community of the town of Ihringen, completely indexed and fully searchable. For search tips, see below.</p>
 
         <!-- CSV Data Filter Form -->
         <form method="POST" action="/search" target="_blank">
             <div class="search-container">
+
+                <div class="search-text">
+                Specific search
+                </div>
+         
+                <label for="search-input-entryd">Entry:</label>
+                <input type="text" name="search-input-entry" placeholder="Entry number (1-765)...">
+ 
+                <label for="search-input-person-id">Person ID:</label>
+                <input type="text" name="search-input-person-id" placeholder="Person ID...">
+                
+                <div class="search-text">
+                General search
+                </div>
+                            
                 <label for="search-input-given-name">Given Name:</label>
                 <input type="text" name="search-input-given-name" placeholder="Given Name...">
                 
@@ -89,8 +149,13 @@
                 <input type="text" name="search-input-year" placeholder="Year...">
                 
                 <div class="boxfix">
-                <input type="checkbox" name="witness-ind" checked=""> 
-                <label for="checkbox">Exclude event witness data from results</label>
+                <input type="checkbox" name="abridged-data" id="abridged-data" checked=""> 
+                <label for="abridged-data">Show only abridged data in results</label>
+                </div>
+                
+                <div class="boxfix">
+                <input type="checkbox" name="witness-ind" id="witness-ind" checked=""> 
+                <label for="witness-ind">Exclude event witness data from results</label>
                 </div>
                 
                 <button type="submit">Search</button>
@@ -98,7 +163,73 @@
         </form>
 
         <!-- More content -->
-        <p>More content on my page.</p>
+	<div class="textbox">
+	<h3>Search tips</h3>
+	<p>All names have been "normalized," which means that despite many spelling variations of names throughout the Standesbücher, a single spelling has been arbitrarily determined for each unique surname. Additionally, a single spelling has been arbitrarily determined for each individual's given name, although two people may have the same given name spelled differently.</p>
+	<p>See below for a table of the most common surnames by their normalized spelling. The exact spelling of each name on each record can be viewed by unchecking the checkbox labeled "Show only abridged data in results." For full details on which data fields are included and excluded in the abridged search, refer to the <a href="{{ url_for('data_dictionary') }}" target="_blank">data dictionary</a>.</p>
+	<p>The "Given Name", "Surname", and "Town" fields accept the wildcards '%' for multiple-character replacement and '_' for single-character replacement.</p>
+	<p>The "Town" field refers to the individual's town of origin. To search for towns, especially those outside of Baden, it is often best to include a '%' wildcard after the town name to account for various specifications, like region and country names, that might be appended to the town name (search "Rixheim%" instead of "Rixheim", for instance).</p>
+	<p>The "Comments" field may contain commentary from the record about the individual, links to outside information about the individual, or interesting metainformation about the record itself. The search query returns all entries containing any text string matching the search term.</p>
+	<p>Event witness data can be obtained by unchecking the checkbox labeled "Exclude event witness data from results." Witness data can be interesting in its own right, but is generally of little genealogical significance. More than 95% of records list witnesses to the event.</p>
+	<p>If you are unsure where to begin, simply hitting "Search" with all fields empty will return the entire dataset (765 entries, 953 individuals, 4133 rows).</p>
+	</div>
+	<div class="textbox">
+	<h3>Major surnames</h3>
+	<p>The table below contains the "normalized" spelling of the 10 most common surnames which appear in the Ihringen Standesbücher. However, this table represents just a small portion of the 146 surnames in the dataset (or 86 excluding witnesses).</p>
+        <table>
+	    <tr>
+                <th>Surname</th>
+	        <th>Individuals</th>
+	        <th>Unique spellings</th>
+	    </tr>
+            <tr>
+                <td>MEYER</td>
+                <td>129</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>BLOCH</td>
+                <td>118</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>WEIL</td>
+                <td>99</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>GEISMAR</td>
+                <td>77</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>HEILBRONNER</td>
+                <td>68</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>BLUM</td>
+                <td>58</td>
+                <td>1</td>
+            <tr>
+                <td>FELSENSTEIN</td>
+                <td>46</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>GÜNZBURGER</td>
+                <td>37</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>GUGGENHEIMER</td>
+                <td>32</td>
+                <td>4</td>
+            <tr>
+                <td>WILMERSDORF</td>
+                <td>17</td>
+                <td>2</td>
+        </table>
+	</div>
     </div>
-</body>
-</html>
+{% endblock %}
