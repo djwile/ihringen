@@ -146,6 +146,27 @@ def get_relationship_order(relationship):
 def index():
     return render_template("search_app-page.html")
 
+
+@application.route("/about")
+def about():
+    return render_template("static_pages/about.html")
+
+
+@application.route("/data-dictionary")
+def data_dictionary():
+    return render_template("static_pages/data_dictionary.html")
+
+
+@application.route("/earlier-records")
+def earlier_records():
+    return render_template("static_pages/earlier_records.html")
+
+
+@application.route("/contact")
+def contact():
+    return render_template("static_pages/contact.html")
+
+
 @application.route("/search", methods=["GET", "POST"])
 def search():
     df = fetch_csv_data()
@@ -182,19 +203,19 @@ def search():
                 if field in ["Given Name", "Surname", "Town"]:
                     if "%" in search_term or "_" in search_term:
                         sql_wildcards = search_term.replace("%", ".*").replace("_", ".")
-                        filtered_rows = filtered_rows[filtered_rows[column] \
+                        filtered_rows = filtered_rows[filtered_rows[column]\
                             .str.contains(sql_wildcards, na=False, regex=True)]
                     else:
                         filtered_rows = apply_soundex_filter(filtered_rows, column, search_term)
                 elif field in ["Entry", "Person ID", "Year"]:
-                    filtered_rows = filtered_rows[filtered_rows[column] \
+                    filtered_rows = filtered_rows[filtered_rows[column]\
                          .str.match(search_term, na=False, case=False)]
                 else:
-                     filtered_rows = filtered_rows[filtered_rows[column] \
+                     filtered_rows = filtered_rows[filtered_rows[column]\
                          .str.contains(search_term, na=False, case=False)]
 
-        filtered_data = filtered_rows[["EntryNum"]] \
-            .drop_duplicates(subset=["EntryNum"], keep='first') \
+        filtered_data = filtered_rows[["EntryNum"]]\
+            .drop_duplicates(subset=["EntryNum"], keep='first')\
             .merge(filtered_data, on='EntryNum', validate="1:m")
 
 
