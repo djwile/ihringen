@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block title %}Earlier data - Ihringen Jewish records{% endblock %}
+
+{% block additional_styles %}
+
+<style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .container h1 {
+            margin-left: 40px;
+        }
+        .container p {
+            line-height: 1.5;
+        }
+	ul {
+	    list-style-type: none;
+	    line-height: 1.5;
+	}
+	ol {
+            list-style-type: decimal;
+            line-height: 1.5;
+        }
+</style>
+
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+	    <h1>Pre-1811 records</h1>
+	    <p>Berthold Rosenthal (1875-1957) was the preeminent historian and genealogist of Baden's Jewish community. The notes he took for his own research and for clients are held in the <a href="https://archive.org/details/LeoBaeckInstitute" target="_blank">Leo Baeck Institute Archives</a> and completely digitized.</p>
+	    <p>A section of these notes, on the second microform reel of this collection, is titled "Namengebung Verzeichnis", or the naming registry. This section contains handwritten lists of every named Jewish person from early records broken out by town. <a href="https://archive.org/details/lbi_brc_mf484_reel02/page/n556/mode/1up" target="_blank">The Ihringen part of this registry</a> (pages 557-559) consists of two lists, one from 1738 and one from 1809. I'm not certain which specific original documents these transcribe, but from their nature I'll guess that the 1738 record lists who had been issued Schutzbriefe (letters of protection) or who had paid for them, while the 1809 record is likely an early civil registry, perhaps to establish a population baseline for the implementation of the Standesbücher the next year.</p>
+	    <h3>1738 list of heads of household</h3>
+	    <p>The 1738 list contains only 10 adult men's names. Where possible, PersonID numbers from this site's dataset have been added in parentheses. Spelling is taken directly from Berthold Rosenthal's notes.<p>
+	<ul>
+            <li><b>Marx Geißmar</b></li>
+	    <li><b>Jacob Geißmar, d. Alt</b></li>
+	    <li><b>Jacob Geißmar, d. Jung</b></li>
+	    <li><b>Abraham Wertheimer</b></li>
+            <li><b>Salomon Geißmar</b> (3112924)</li>
+	    <li><b>Lemann Levi</b></li>
+            <li><b>Feißel Heylbronner</b> (2710822)</li>
+            <li><b>Samuel Weyl</b> (1401922)</li>
+            <li><b>Abraham Levi</b></li>
+            <li><b>Moses Bloch</b> (2105822)</li>
+	</ul>
+	    <p>This list is obviously not an attempt to name every Jewish resident of Ihringen, but rather a list of the heads of household at the time. As a list likely detailing payment for or receipt of Schutzbriefe, which were only required after children left their father's household, everyone listed has probably been married.</p>
+	    <p>The men with Person IDs are the fathers of the oldest generation recorded in the Standesbücher, who died in relatively old age during the first decade or so of recordkeeping. The Levis listed are probably father and son, and based on onomastic evidence are likely the progenitors, through an intermediary generation, of the Blum family rather than the Felsenstein family (both of which often appear with Levi as a kind of middle name or fore-surname).</p>
+            <h3>1809 civil registry</h3>
+	    <p>The 1809 list is much more like a census. Heads of household are listed first, then the members of the household (starting with the head in initials, then the head's wife, and finally their children) are listed with their ages. As children as young as 3 months old are named, it can be assumed that this registry was intended to account for every Jewish resident in Ihringen.</p>
+	    </p>Question marks are original to Berthold Rosenthals's notes. Once again, PersonIDs from this site's dataset are added in parentheses where known. Asterisks next to names represent uncertain spellings. Asterisks next to PersonIDs represent uncertain identification. Spelling is taken directly from Rosenthal's notes. Where Rosenthal used initials and ditto marks, the full name is written out.<p>
+        <ol>
+            <li><b>Mayer Bloch</b>
+	        <ul>
+		    <li>Mayer, 73 (1301431)</li>
+		    <li>Mendel, 68 (2105821)</li>
+	        </ul>
+	    </li>
+            <li><b>Heinrich Levi Blum</b>
+	        <ul>
+                    <li>Heinrich Levi, 55 (1100231)</li>
+                    <li>Kändel, 45 (1005121)</li>
+                </ul>
+            </li>
+	    <li><b>Leopold Levi Blum</b>
+                <ul>
+                    <li>Leopold Levi, 48 (1301021)</li>
+                    <li>Lea, 34 (1301022)</li>
+		    <li>Rifge, 11</li>
+                    <li>Eva, 8 (3315721)</li>
+		    <li>Feil, 5</li>
+                    <li>Aron, 4.5 (4427411)</li>
+                </ul>
+            </li>
+	    <li><b>Abraham Levi Blum</b>
+	        <ul>
+                    <li>Abraham Levi, 45 (1301321)</li>
+                    <li>Schöne, 33 (1301322)</li>
+                    <li>Rifge, 10</li>
+                    <li>Ester, 8</li>
+                    <li>Hindel, 7 (1804311)</li>
+                    <li>Feile, 5 (2307211)</li>
+		    <li>Regina, 0.25 (3418711)</li>
+                </ul>
+            </li>
+	    <li><b>Nathan Bloch, Vorsteher</b>
+                <ul>
+                    <li>Nathan, 34 (1100134)</li>
+                    <li>Klara, 26 (1200822)</li>
+                    <li>Stephanie, 6</li>
+                    <li>Ester, 4</li>
+                    <li>Sara, 2 (1200911)</li>
+                    <li>Moses, 0.5 (1200811)</li>
+                </ul>
+            </li>
+            <li><b>Hirsch Bloch</b>
+	        <ul>
+                    <li>Hirsch, 25 (1301221)</li>
+                    <li>Leon(?), 17 (1301222)</li>
+		</ul>
+            </li>
+	    <li><b>Heinrich Geißmar</b>
+	        <ul>
+                    <li>Heinrich, 58 (1100232)</li>
+                    <li>Rifge Levi, 50 (3112923)</li>
+                    <li>Kändel, 18</li>
+                    <li>Rohla, 14</li>
+		</ul>
+            </li>
+	    <li><b>Salomon Geißmar</b>
+	        <ul>
+                    <li>Salomon, 31 (1200831)</li>
+                    <li>Katharina, 25 (2811722)</li>
+                    <li>Sara, 7</li>
+                    <li>Hindel, 5</li>
+                    <li>Wolf, 2 (2811532)</li>
+		</ul>
+            </li>
+            <li><b>Heinrich Geißmar, Witwer</b>
+	        <ul>
+                    <li>Heinrich, 50 (2609221)</li>
+                    <li>Salomon, 21.5 (2206221)</li>
+                    <li>Josef, 18.5 (2609211)</li>
+                    <li>Rosina, 11</li>
+                    <li>Hanna, 13</li>
+                    <li>Zerla, 6</li>
+                </ul>
+            </li>
+            <li><b>Götsch Guggenheimer</b>
+	        <ul>
+                    <li>Götsch, 58 (1005021)</li>
+                    <li>Gietel, 66 (1005011)</li>
+                </ul>
+            </li>
+            <li><b>Jakob Guggenheimer</b>
+                <ul>
+                    <li>Jakob, 47 (1200731)</li>
+                    <li>Genentel, 41 (1401824)</li>
+                    <li>Blum, 21 (1401812)</li>
+                    <li>Marx, 18 (2407811)</li>
+                    <li>Judit, 15</li>
+                    <li>Jachet, 13 (2710212)</li>
+                    <li>Berle, 11</li>
+		    <li>Rosina, 9 (2113821)*</li>
+                    <li>Josef, 7</li>
+                    <li>Marian, 4</li>
+                    <li>Schona, 2</li>
+                </ul>
+            </li>
+            <li><b>David Günzburger</b>
+                <ul>
+                    <li>David, 41 (1100133)</li>
+                    <li>Vogel, 27 (2206722)</li>
+                    <li>Herz, 10 (2206711)</li>
+                    <li>Ester, 6</li>
+                    <li>Judit, 4 (2710412)</li>
+                </ul>
+            </li>
+            <li><b>Jakob Heilbronner</b>
+                <ul>
+                    <li>Jakob, 59 (1603121)</li>
+                    <li>Rachela, 50 (1100132)</li>
+                    <li>Jeschel*, 20 (1603111)*</li>
+                    <li>Leopold, 18 (2307011)</li>
+                    <li>Samuel, 11 (2609031)</li>
+                    <li>Blum, 21</li>
+                    <li>Lea, 10 (3214412)</li>
+		</ul>
+            </li>
+            <li><b>Jakob Levit [Felsenstein, Witwer]</b>
+	        <ul>
+                    <li>Jakob, 54 (1401622)</li>
+                    <li>Feil, 26 (1401511)</li>
+                    <li>Samuel, 23 (1401811)</li>
+                    <li>Salomon, 16 (2307111)</li>
+                    <li>Marx, 4 (3214221)</li>
+                    <li>Daniel, 5</li>
+                    <li>Vögele, 1</li>
+                </ul>
+            </li>
+            <li><b>Heinrich Mayer</b>
+                <ul>
+                    <li>Heinrich, 61 (1603123)</li>
+                    <li>Fertel*, 16 (1603112)*</li>
+                    <li>Jakob, 13 (2508732)</li>
+                    <li>Israel, 10 (3316832)</li>
+                    <li>Marx, 8 (3214411)</li>
+		</ul>
+            </li>
+            <li><b>Mayer Mayer</b>
+                <ul>
+                    <li>Mayer, 42 (1100221)</li>
+                    <li>Rifga, 21 (1100222)</li>
+                    <li>Menga, 1 (2710711)</li>
+		</ul>
+	    </li>
+            <li><b>Jakob Mayer</b>
+                <ul>
+                    <li>Jakob, 41 (1200521)</li>
+                    <li>Möhrla, 36 (1200522)</li>
+                    <li>Bräunle, 10 (2206612)</li>
+                    <li>Samuel, 9</li>
+                    <li>Isack, 6.5 (3418311)</li>
+                    <li>Jendel, 4 (3214612)*</li>
+                    <li>F[----]l*, 2</li>
+                </ul>
+	    </li>
+	    <li><b>Venset? Heilbronner</b>
+	        <ul>
+                    <li>Venset?, 32 (1200621)</li>
+                    <li>Ester, 29 (1200622)</li>
+                    <li>Herzel, 7 (3418111)</li>
+                    <li>Kaja, 2</li>
+	        </ul>
+	    </li>
+	    <li><b>Samuel Heilbronner</b>
+                <ul>
+                    <li>Samuel, 61 (1502932)</li>
+                    <li>Rosa, 54 (2710821)</li>
+                    <li>Sara, 13</li>
+                </ul>
+	    </li>
+	    <li><b>Samuel Weil</b>
+                <ul>
+                    <li>Samuel, 71 (1401911)</li>
+                    <li>Schöne, 61 (1401921)</li>
+                    <li>Salomon, 25 (1502121)</li>
+                    <li>Liebmann, 21 (1004911)</li>
+                    <li>Lea, 24</li>
+                </ul>
+	    </li>
+	</ol>
+	<p>Individuals without PersonIDs either moved out of town before their wedding and/or death, or died between 1809 and 1811 (when the Ihringen registry actually starts, despite the legal requirement beginning in 1810), the less likely of the two options. Notably, Heinrich Geismar's wife, Rifge (Rebekka) Levi, did in fact die in the intervening period&mdash;as proven by her <a href="http://www.landesarchiv-bw.de/plink/?f=2-2528215" target="_blank">grave marker</a>&mdash;and is only known in this site's dataset from a single reference in the Standesbücher.</p>
+    </div>
+{% endblock %}
