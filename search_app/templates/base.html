@@ -6,28 +6,28 @@
     <title>{% block title %}Ihringen Jewish records search{% endblock %}</title>
     <style>
         body {
-	    margin: 0;
+            margin: 0;
             padding: 0;
             font-family: Helvetica, Arial, sans-serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-	    background-color: #f6f7f1;
-	}
+            background-color: #f6f7f1;
+        }
         .toolbar {
             background-color: #ffe066;
             padding: 10px 10px;
             width: 100%;
             box-sizing: border-box;
         }
-	.toolbar-links {
-	    margin-left: 190px;
+        .toolbar-links {
+            margin-left: 190px;
             margin-right: 120px;
-	}
+        }
         .toolbar-links a {
             color: black;
             font-weight: bold;
-	    text-decoration: none;
+            text-decoration: none;
             padding: 5px 40px;
         }
         .toolbar-links a:hover {
@@ -35,44 +35,45 @@
         }
         .content {
             padding: 20px;
-	    margin-left: 160px;
-	    margin-right: 150px;
+            margin-left: 160px;
+            margin-right: 150px;
             flex: 1
-	}
-	.footer {
+        }
+        .footer {
             width: 100%;
             margin-top: auto;
-	}
-	.footer p {
+        }
+        .footer p {
             padding: 0;
-	    margin-left: 5px;
-	    line-height: 1; /* Removes any extra space below the image */
-	    font-family: "Times New Roman", serif; 
-	    font-size: .875em;
-	}
+            margin-left: 5px;
+            line-height: 1; /* Removes any extra space below the image */
+            font-family: "Times New Roman", serif;
+            font-size: .875em;
+        }
         .footer img {
             width: 100%;
             height: auto;
             display: block; /* Removes any default inline spacing */
-	}
+        }
     </style>
     {% block additional_styles %}{% endblock %}
 </head>
 <body>
     <div class="toolbar">
-	<div class="toolbar-links">
+        <div class="toolbar-links">
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('about') }}">About</a>
             <a href="{{ url_for('data_dictionary') }}">Data dictionary</a>
+            <a href="{{ url_for('earlier_records') }}">Earlier records</a>
             <a href="{{ url_for('contact') }}">Contact</a>
-	</div>
+        </div>
     </div>
     <div class="content">
         {% block content %}{% endblock %}
     </div>
     <div class="footer">
         <img src="{{ url_for('static', filename='ihringen_postcard01-1a.jpg') }}" alt="Detail from a historical Ihringen postcard showing an illustrated view of the town from the heights of a vineyard through a clearing between trees. The town church is the most dominant structure in the town, while the much smaller, since-destroyed synagogue is visible directly to the right of the church. Behind the town's furthest houses, rolling hills hold more vineyards and trees.">
-	<p>© 2025, <a href="{{ url_for('contact') }}" target="_blank">David Wile</a>. All rights reserved.</p>
+        <p>© 2025, <a href="{{ url_for('contact') }}" target="_blank">David Wile</a>. All rights reserved.</p>
     </div>
 </body>
 </html>
