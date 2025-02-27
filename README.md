@@ -4,3 +4,6 @@ From 1810 to 1870, the Grand Duchy of Baden required local religious communities
 Beginning in 2021, I transcribed the most important parts of the records of Ihringen's Jewish community into a table, and also included some metadata to aid in querying. I attempted to make the data maximally useful for genealogists. 
 
 I place the data here to make it publicly available to all those interested.
+
+## ihringenjewishrecords.org
+This repo also contains all code for the site [ihringenjewishrecords.org](https://ihringenjewishrecords.org). This site allows users to search the Ihringen Jewish data without needing to download or query it for themselves. 
