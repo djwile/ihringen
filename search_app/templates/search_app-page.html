@@ -12,6 +12,7 @@
         }
         .container h1 {
             margin-left: 40px;
+            font-size: 1.8rem;
         }
         .container p{
             line-height: 1.5;
@@ -26,9 +27,11 @@
             max-width: 400px;
             margin: 50px auto;
             background-color: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            width: 95%;
         }
         .search-text {
             grid-column: 1 / span 2;
@@ -41,6 +44,8 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .boxfix {
             grid-column: 1 / span 2;
@@ -48,8 +53,9 @@
             padding-left: 20px;
         }
         .search-container input[type="checkbox"] {
-            transform: scale(1);
-            vertical-align: bottom;
+            transform: scale(1.2);
+            vertical-align: middle;
+            margin-right: 8px;
         }
         .search-container label {
             text-align: right;
@@ -58,7 +64,8 @@
             font-size: 16px;
             color: #333;
         }
-        .search-container label[for="abridged-data"], label[for="witness-ind"] {
+        .search-container label[for="abridged-data"],
+        label[for="witness-ind"] {
             text-align: left;
             padding: 0;
             padding-left: 20px;
@@ -68,7 +75,7 @@
         }
         .search-container button {
             grid-column: 1 / span 2;
-            padding: 10px;
+            padding: 12px;
             background-color: #007bff;
             color: white;
             border: none;
@@ -76,20 +83,25 @@
             font-size: 20px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            min-height: 44px;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
         }
         table {
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
             margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
         }
         table, th, td {
             border: 1px solid black;
             font-size: .95em;
         }
         td {
-            padding: 5px;
-            padding-right: 20px;
+            padding: 5px 20px;
             text-align: right;
         }
         td:nth-child(1) {
@@ -107,6 +119,43 @@
             text-align: center;
             background-color: #ffe066;
             border-block: thick solid black;
+        }
+
+        /* Added Mobile Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .search-container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                margin: 20px auto;
+            }
+
+            .search-container label {
+                text-align: left;
+                padding-top: 5px;
+                padding-bottom: 2px;
+                grid-column: 1 / span 2;
+            }
+
+            .search-container input[type="text"] {
+                grid-column: 1 / span 2;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            td, th {
+                padding: 8px 6px;
+            }
+
+            .container h1 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
         }
     </style>
 {% endblock %}
