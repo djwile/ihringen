@@ -10,15 +10,15 @@
         .container {
             margin: 20px;
         }
-	.container h1 {
-	    margin-left: 40px;
-	}
-	.container p{
-	    line-height: 1.5;
-	}
-	.textbox {
-	    padding-bottom: 5px;
-	}
+        .container h1 {
+            margin-left: 40px;
+        }
+        .container p{
+            line-height: 1.5;
+        }
+        .textbox {
+            padding-bottom: 5px;
+        }
         .search-container {
             display: grid;
             grid-template-columns: 110px 1fr;
@@ -79,27 +79,27 @@
         }
         table {
             margin-left: auto;
-	    margin-right: auto;
+            margin-right: auto;
             border-collapse: collapse;
             margin-top: 20px;
         }
         table, th, td {
             border: 1px solid black;
-	    font-size: .95em;
-	}
+            font-size: .95em;
+        }
         td {
             padding: 5px;
-	    padding-right: 20px;
-	    text-align: right;
+            padding-right: 20px;
+            text-align: right;
         }
-	td:nth-child(1) {
-	    padding-left: 10px;
+        td:nth-child(1) {
+            padding-left: 10px;
             text-align: left;
-	}
-	tr:nth-child(odd) {
-	    background-color: #ffffff;
-	}
-	tr:nth-child(even) {
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:nth-child(even) {
             background-color: #f0f8ff;
         }
         th {
@@ -114,7 +114,7 @@
 {% block content %}
     <div class="container">
         <h1>Search the Ihringen Jewish Standesbücher</h1>
-        <p>The Baden Standesbücher, or civil status registries, attempted to record every birth, marriage, and death in the Grand Duchy of Baden from 1810 to 1870. The Landesarchiv (State Archive) Baden-Württemberg has scanned these registries in their entirety and made them available online. This site contains the records from the small Jewish community of the town of Ihringen, completely indexed and fully searchable. For search tips, see below.</p>
+        <p>The Baden Standesbücher, or civil status registries, attempted to record every birth, marriage, and death in the Grand Duchy of Baden from 1810 to 1870. The Landesarchiv (State Archive) Baden-Württemberg has scanned these registries in their entirety and made them available online. This site contains the records from the small Jewish community of the town of Ihringen, completely indexed and fully searchable. For search tips and help getting started, see below.</p>
 
         <!-- CSV Data Filter Form -->
         <form method="POST" action="/search" target="_blank">
@@ -123,66 +123,66 @@
                 <div class="search-text">
                 Specific search
                 </div>
-         
+
                 <label for="search-input-entryd">Entry:</label>
                 <input type="text" name="search-input-entry" placeholder="Entry number (1-765)...">
- 
+
                 <label for="search-input-person-id">Person ID:</label>
                 <input type="text" name="search-input-person-id" placeholder="Person ID...">
-                
+
                 <div class="search-text">
                 General search
                 </div>
-                            
+
                 <label for="search-input-given-name">Given Name:</label>
                 <input type="text" name="search-input-given-name" placeholder="Given Name...">
-                
+
                 <label for="search-input-surname">Surname:</label>
                 <input type="text" name="search-input-surname" placeholder="Surname...">
-             
+
                 <label for="search-input-town">Town:</label>
                 <input type="text" name="search-input-town" placeholder="Town...">
-                
+
                 <label for="search-input-comments">Comments:</label>
                 <input type="text" name="search-input-comments" placeholder="Comments...">
-                
+
                 <label for="search-input-year">Year:</label>
                 <input type="text" name="search-input-year" placeholder="Year...">
-                
+
                 <div class="boxfix">
-                <input type="checkbox" name="abridged-data" id="abridged-data" checked=""> 
+                <input type="checkbox" name="abridged-data" id="abridged-data" checked="">
                 <label for="abridged-data">Show only abridged data in results</label>
                 </div>
-                
+
                 <div class="boxfix">
-                <input type="checkbox" name="witness-ind" id="witness-ind" checked=""> 
+                <input type="checkbox" name="witness-ind" id="witness-ind" checked="">
                 <label for="witness-ind">Exclude event witness data from results</label>
                 </div>
-                
+
                 <button type="submit">Search</button>
             </div>
         </form>
 
         <!-- More content -->
-	<div class="textbox">
-	<h3>Search tips</h3>
-	<p>All names have been "normalized," which means that despite many spelling variations of names throughout the Standesbücher, a single spelling has been arbitrarily determined for each unique surname. Additionally, a single spelling has been arbitrarily determined for each individual's given name, although two people may have the same given name spelled differently.</p>
-	<p>See below for a table of the most common surnames by their normalized spelling. The exact spelling of each name on each record can be viewed by unchecking the checkbox labeled "Show only abridged data in results." For full details on which data fields are included and excluded in the abridged search, refer to the <a href="{{ url_for('data_dictionary') }}" target="_blank">data dictionary</a>.</p>
-        <p>The "Given Name", "Surname", and "Town" fields accept the wildcards '%' for multiple-character replacement and '_' for single-character replacement. Additionally, a version of the <a href="https://en.wikipedia.org/wiki/Cologne_phonetics" target="_blank">Cologne phonetics algorithm</a> has been applied to these fields to allow for alternate and phonetic spellings.</p>
-        <p>The "Town" field refers to the individual's town of origin. To search for regions and countries outside of Baden, it is often best to include a '%' wildcard before and after the region or country name (e.g., search "%Switzerland%" instead of "Switzerland" or "%Alsace%" instead of "Alsace").</p>
-	<p>The "Comments" field may contain commentary from the record about the individual, links to outside information about the individual, or interesting metainformation about the record itself. The search query returns all entries containing any text string matching the search term.</p>
-	<p>Event witness data can be obtained by unchecking the checkbox labeled "Exclude event witness data from results." Witness data can be interesting in its own right, but is generally of little genealogical significance. More than 95% of records list witnesses to the event.</p>
-	<p>If you are unsure where to begin, simply hitting "Search" with all fields empty will return the entire dataset (765 entries, 952 individuals, 4133 rows).</p>
-	</div>
-	<div class="textbox">
-	<h3>Major surnames</h3>
-	<p>The table below contains the "normalized" spelling of the 10 most common surnames which appear in the Ihringen Standesbücher. However, this table represents just a small portion of the 146 surnames in the dataset (or 86 excluding witnesses).</p>
+        <div class="textbox">
+        <h3>Search tips</h3>
+        <p>All <b>Given Names</b> and <b>Surnames</b> have been "normalized," which means that despite many spelling variations of names throughout the Standesbücher, a single spelling has been arbitrarily determined for each unique surname. Additionally, a single spelling has been arbitrarily determined for each individual's given name, although two people may have the same given name spelled differently.</p>
+        <p>See below for a table of the most common surnames by their normalized spelling. The exact spelling of each name on each record can be viewed by unchecking the checkbox labeled "<b>Show only abridged data in results</b>." For full details on which data fields are included and excluded in the abridged search, refer to the <a href="{{ url_for('data_dictionary') }}" target="_blank">data dictionary</a>.</p>
+        <p>The <b>Given Name</b>, <b>Surname</b>, and <b>Town</b> fields accept the wildcards '%' for multiple-character replacement and '_' for single-character replacement. Additionally, a version of the <a href="https://en.wikipedia.org/wiki/Cologne_phonetics" target="_blank">Cologne phonetics algorithm</a> has been applied to these fields to allow for alternate and phonetic spellings.</p>
+        <p>The <b>Town</b> field refers to the individual's town of origin. To search for regions and countries outside of Baden, it is often best to include a '%' wildcard before and after the region or country name (e.g., search "%Switzerland%" instead of "Switzerland" or "%Alsace%" instead of "Alsace").</p>
+        <p>Searching the <b>Comments</b> field returns all entries containing any text string in a column of the dataset called "Notes" matching the search term. The "Notes" column may contain commentary from the record about the individual, links to records outside the Ihringen Standesbücher pertaining to the individual, or interesting notes about the record itself.</p>
+        <p>Event witness data can be obtained by unchecking the checkbox labeled "<b>Exclude event witness data from results</b>." Witness data can be interesting in its own right, but is generally of little genealogical significance. More than 95% of records list witnesses to the event.</p>
+        <p>If you are unsure where to begin, simply hitting <b>Search</b> with all fields empty will return the entire dataset (765 entries, 952 individuals, 4133 rows).</p>
+        </div>
+        <div class="textbox">
+        <h3>Major surnames</h3>
+        <p>The table below contains the "normalized" spelling of the 10 most common surnames which appear in the Ihringen Standesbücher. However, this table represents just a small portion of the 146 surnames in the dataset (or 86 excluding witnesses).</p>
         <table>
-	    <tr>
+            <tr>
                 <th>Surname</th>
-	        <th>Individuals</th>
-	        <th>Unique spellings</th>
-	    </tr>
+                <th>Individuals</th>
+                <th>Unique spellings</th>
+            </tr>
             <tr>
                 <td>MEYER</td>
                 <td>128</td>
@@ -231,6 +231,6 @@
                 <td>17</td>
                 <td>2</td>
         </table>
-	</div>
+        </div>
     </div>
 {% endblock %}
