@@ -1,4 +1,4 @@
-EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,WitnessInd,Relationship,FirstNameNorm,FirstNameCert,LastNameNorm,LastNameCert,TownOfOrigin,TownCert,Age,JungAltInd,IllegitInd,Status,Occupation,Notes,PersonID,BirthXRef,MarriageXRef,DeathXRef,OtherXRef,OtherXRefEvent,NonJewInd,DeadInd,FirstNameXct,LastNameXct,MistakenNameInd,Permalink
+﻿EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,WitnessInd,Relationship,FirstNameNorm,FirstNameCert,LastNameNorm,LastNameCert,TownOfOrigin,TownCert,Age,JungAltInd,IllegitInd,Status,Occupation,Notes,PersonID,BirthXRef,MarriageXRef,DeathXRef,OtherXRef,OtherXRefEvent,NonJewInd,DeadInd,FirstNameXct,LastNameXct,MistakenNameInd,Permalink
 1,1811-1820,46,1811,22 Nov,07:00,Birth,M,1,0,0,Child,Isaak,A,Weil,A,Ihringen,A,Newborn,,,,,Burial: http://www.landesarchiv-bw.de/plink/?f=2-2525742,1100111,,,,,,,,Isaak,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-46
 1,1811-1820,46,1811,22 Nov,07:00,Birth,M,0,1,0,Father,Joseph,A,Weil,A,Ihringen,I,,,,,"""Judenvorsänger""",Appears later in Eichstetten records; burial: http://www.landesarchiv-bw.de/plink/?f=2-2524340,1100121,,,,,,,,Joseph,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-46
 1,1811-1820,46,1811,22 Nov,07:00,Birth,F,0,1,0,Mother,Blum,A,Weil,A,Ihringen,I,,,,,,-in suffix; appears later in Eichstetten records; burial: http://www.landesarchiv-bw.de/plink/?f=2-2524944,1100122,,,,,,,,Blum,Weilin,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-46
@@ -7,7 +7,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 1,1811-1820,46,1811,28 Nov,,Bris,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-46
 1,1811-1820,46,1811,28 Nov,,Bris,M,0,0,1,Witness,Nathan,A,Bloch,A,Ihringen,A,,,,,"""Judenvorsteher""",,1100134,,,119,,,,,Nathan,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-46
 2,1811-1820,47,1811,09 Apr,00:00,Death,F,1,0,0,Death,Zipora,A,Meyer,A,Ihringen,A,28 weeks,,,,,"Nickname ""Zippetle"" also given in this Entry",1100211,,,,,,,1,Zippetle /:Zipora:/,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
-2,1811-1820,47,1811,09 Apr,00:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
+2,1811-1820,47,1811,09 Apr,00:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
 2,1811-1820,47,1811,09 Apr,00:00,Death,F,0,1,0,Mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,-in suffix,1100222,,,633,,,,,Rebecca,Blumin,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
 2,1811-1820,47,1811,09 Apr,20:00,Burial,M,0,0,1,Witness,Heinrich Levi,K,Blum,A,Ihringen,A,,,,,,"""Jude""",1100231,,,51,,,,,Heinrich,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
 2,1811-1820,47,1811,09 Apr,20:00,Burial,M,0,0,1,Witness,Heinrich,A,Geismar,A,Ihringen,A,,,,,,"""Jude""",1100232,,,129,,,,,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
@@ -17,7 +17,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 3,1811-1820,47,1811,15 Sep,18:00,Burial,M,0,0,1,Witness,Nathan,A,Bloch,A,Ihringen,A,,,,,"""Judenvorsteher""",,1100134,,,119,,,,,Nathan,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
 3,1811-1820,47,1811,15 Sep,18:00,Burial,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-47
 4,1811-1820,77,1812,27 Jan,00:00,Birth,F,1,0,0,Child,unnamed,A,Meyer,A,Ihringen,A,Newborn,,,,,,1200411,,,7,,,,,not given,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
-4,1811-1820,77,1812,27 Jan,00:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
+4,1811-1820,77,1812,27 Jan,00:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
 4,1811-1820,77,1812,27 Jan,00:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebecca,Taub,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
 5,1811-1820,77,1812,01 Sep,21:00,Birth,M,1,0,0,Child,Theodor,K,Meyer,A,Ihringen,A,Newborn,,,,,,1200511,,365,,,,,,Dotters,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
 5,1811-1820,77,1812,01 Sep,21:00,Birth,M,0,1,0,Father,Jacob,A,Meyer,A,Ihringen,I,,,,,,,1200521,,,584,,,,,Jacob,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
@@ -30,7 +30,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 6,1811-1820,77,1812,27 Sep,,Bris,M,0,0,1,Witness,Isaak,B,Weil,A,Rust,I,,,,,,,1200631,,,,,,,,Isaak,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
 6,1811-1820,77,1812,27 Sep,,Bris,M,0,0,1,Witness,Heinrich,A,Geismar,A,Ihringen,I,,,,,,,1100232,,,129,,,,,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-77
 7,1811-1820,78,1812,28 Jan,18:00,Death,F,1,0,0,Death,unnamed,A,Meyer,A,Ihringen,A,48 hours,,,,,,1200411,4,,,,,,1,not given,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
-7,1811-1820,78,1812,28 Jan,18:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,4,Birth of child,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
+7,1811-1820,78,1812,28 Jan,18:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,4,Birth of child,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
 7,1811-1820,78,1812,28 Jan,18:00,Death,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,,1100222,,,633,4,Birth of child,,,Rebecca,Taub,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
 7,1811-1820,78,1812,30 Jan,16:00,Burial,M,0,0,1,Witness,Jacob,A,Guggenheimer,A,Ihringen,I,,,,,,,1200731,,,32,,,,,Jacob,Guggenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
 7,1811-1820,78,1812,30 Jan,16:00,Burial,M,0,0,1,Witness,Heinrich Levi,A,Blum,A,Ihringen,I,,,,,,,1100231,,,51,,,,,Heinrich Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-78
@@ -61,7 +61,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 13,1811-1820,107,1813,25 May,,Bris,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,I,,,,,,,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-107
 13,1811-1820,107,1813,25 May,,Bris,M,0,0,1,Witness,Heinrich,A,Geismar,A,Ihringen,I,,,,,,,1100232,,,129,,,,,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-107
 14,1811-1820,108,1813,04 Nov,17:00,Birth,M,1,0,0,Child,Hirschel,A,Meyer,A,Ihringen,A,Newborn,,,,,,1301411,,293,,,,,,Hirschel,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
-14,1811-1820,108,1813,04 Nov,17:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
+14,1811-1820,108,1813,04 Nov,17:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
 14,1811-1820,108,1813,04 Nov,17:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,-in suffix possibly,1100222,,,633,,,,,Rebecka,Tuben,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
 14,1811-1820,108,1813,12 Nov,,Bris,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,I,,,,,,,1301431,,,58,,,,,Mayer,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
 14,1811-1820,108,1813,12 Nov,,Bris,M,0,0,1,Witness,Nathan,A,Bloch,A,Ihringen,I,,,,,,,1100134,,,119,,,,,Nathan,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-108
@@ -167,7 +167,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 34,1811-1820,224,1817,25 Jan,,Bris,M,0,0,1,Witness,Nathan,A,Bloch,A,Ihringen,A,,,,,"""Vorsteher""",,1100134,,,119,,,,,Nathan,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
 34,1811-1820,224,1817,25 Jan,,Bris,M,0,0,1,Witness,Heinrich,A,Geismar,A,Ihringen,A,,,,,,,1100232,,,129,,,,,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
 35,1811-1820,224,1817,16 Jul,22:00,Birth,F,1,0,0,Child,Rebekka,A,Meyer,A,Ihringen,A,Newborn,,,,,-in suffix,1703511,,430,,,,,,Rebeka,Mayerin,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
-35,1811-1820,224,1817,16 Jul,22:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
+35,1811-1820,224,1817,16 Jul,22:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
 35,1811-1820,224,1817,16 Jul,22:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebeka,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
 35,1811-1820,224,1817,16 Jul,22:00,Birth,F,0,0,1,Witness,Bess,A,Guggenheimer,A,Ihringen,I,,,,,,,1603124,,,120,,,,,Bess,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
 35,1811-1820,224,1817,16 Jul,22:00,Birth,F,0,0,1,Witness,Ester Levi,K,Weil,K,Rust,I,,,,,,,1200622,,,433,,,,,Ester,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-224
@@ -225,7 +225,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 47,1811-1820,320,1820,30 Jul,14:00,Birth,M,0,1,0,Father,Samuel Levi,A,Felsenstein,K,Ihringen,I,,,,,,,1401811,,18,217,,,,,Samuel,Levi,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
 47,1811-1820,320,1820,30 Jul,14:00,Birth,F,0,1,0,Mother,Blum,A,Guggenheimer,A,Ihringen,I,,,,,,-in suffix,1401812,,18,,,,,,Blum,Guggenheimerin,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
 48,1811-1820,320,1820,14 Oct,14:00,Birth,M,1,0,0,Child,Hänle,A,Meyer,A,Ihringen,A,Newborn,,,,,,1004811,,,53,,,,,Hänle,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
-48,1811-1820,320,1820,14 Oct,14:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
+48,1811-1820,320,1820,14 Oct,14:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
 48,1811-1820,320,1820,14 Oct,14:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebecca,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-320
 49,1811-1820,321,1820,20 Oct,16:00,Wedding,M,1,0,0,Husband,Lehmann,A,Weil,A,Ihringen,A,34 years,,,,,,1004911,,,763,,,,,Lehmann,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 49,1811-1820,321,1820,20 Oct,16:00,Wedding,F,1,0,0,Wife,Scheine,A,Weil,A,Eichstetten,I,20 years,,,,,,1004912,,,,,,,,Schina,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
@@ -243,14 +243,14 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 51,1811-1820,321,1820,18 Mar,12:00,Death,M,1,0,0,Death,Heinrich Levi,A,Blum,A,Ihringen,A,66 years,,,,,,1100231,,,,,,,1,Heinrich Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 51,1811-1820,321,1820,18 Mar,12:00,Death,F,0,1,0,Wife,Kendel,A,Blum,I,[Oschweyer] im Kinzigkreis,I,,,,,,,1005121,,,68,,,,,Kendel,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 51,1811-1820,321,1820,19 Mar,17:00,Burial,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,I,,,,,,,1200831,,,650,,,,,Salomon,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
-51,1811-1820,321,1820,19 Mar,17:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
+51,1811-1820,321,1820,19 Mar,17:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 52,1811-1820,321,1820,07 Jul,16:00,Death,M,1,0,0,Death,Samuel,A,Weil,A,Ihringen,A,4.5 years,,,,,,1502111,21,,,,,,1,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 52,1811-1820,321,1820,07 Jul,16:00,Death,M,0,1,0,Father,Samuel,A,Weil,A,Ihringen,I,,,,,,,1502121,,,510,21,Birth of child,,,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 52,1811-1820,321,1820,07 Jul,16:00,Death,F,0,1,0,Mother,Maria,K,Bär,K,Eichstetten,I,,,,,,,1502122,,,543,21,Birth of child,,,Marianne,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 52,1811-1820,321,1820,09 Jul,05:00,Burial,M,0,0,1,Witness,Heinrich,A,Geismar,A,Ihringen,I,,,,,,,1100232,,,129,,,,,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 52,1811-1820,321,1820,09 Jul,05:00,Burial,M,0,0,1,Witness,Abraham Levi,A,Blum,A,Ihringen,I,,,,,,,1301321,,,352,,,,,Abraham Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 53,1811-1820,321,1820,29 Oct,13:00,Death,M,1,0,0,Death,Hänle,A,Meyer,A,Ihringen,A,15 days,,,,,,1004811,48,,,,,,1,Hänle,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
-53,1811-1820,321,1820,29 Oct,13:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,48,Birth of child,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
+53,1811-1820,321,1820,29 Oct,13:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,48,Birth of child,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 53,1811-1820,321,1820,29 Oct,13:00,Death,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,,1100222,,,633,48,Birth of child,,,Rebecka,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 53,1811-1820,321,1820,30 Oct,17:00,Burial,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,I,,,,,,,1200831,,,650,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
 53,1811-1820,321,1820,30 Oct,17:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,I,,,,,,,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475838-321
@@ -280,7 +280,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 60,1821-1828,32,1821,01 Aug,,Burial,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,I,,,,,,,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-32
 60,1821-1828,32,1821,01 Aug,,Burial,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,I,,,,,,,1200831,,,650,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-32
 61,1821-1828,60,1822,12 Apr,14:00,Birth,F,1,0,0,Child,Judith,A,Meyer,A,Ihringen,A,Newborn,,,,,-in suffix,2206111,,,,,,,,Judith,Mayerin,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
-61,1821-1828,60,1822,12 Apr,14:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
+61,1821-1828,60,1822,12 Apr,14:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
 61,1821-1828,60,1822,12 Apr,14:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,K,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebekka,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
 62,1821-1828,60,1822,02 Sep,21:00,Birth,F,1,0,0,Child,Ester,A,Geismar,A,Ihringen,A,Newborn,,,,,-in suffix,2206211,,,,,,,,Ester,Geismarin,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
 62,1821-1828,60,1822,02 Sep,21:00,Birth,M,0,1,0,Father,Salomon,A,Geismar,A,Ihringen,I,,,,,,,2206221,,65,470,,,,,Salomo,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-60
@@ -308,7 +308,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 68,1821-1828,62,1822,01 Jun,04:00,Death,F,1,0,0,Death,Kendel,A,Blum,I,[Oschweyer] im Kinzigkreis,C,68 years,,,,,"""Wittwe""",1005121,,,,,,,1,Kendel,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
 68,1821-1828,62,1822,01 Jun,04:00,Death,M,0,1,0,Husband,Heinrich Levi,A,Blum,A,Ihringen,I,,,,,,,1100231,,,51,,,,1,Heinrich Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
 68,1821-1828,62,1822,02 Jun,19:00,Burial,M,0,0,1,Witness,Lazarus,I,Wilmersdorf,A,Ihringen,I,,,,,,,1401732,,,725,,,,,not given,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
-68,1821-1828,62,1822,02 Jun,19:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
+68,1821-1828,62,1822,02 Jun,19:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
 69,1821-1828,62,1822,09 Dec,10:00,Death,M,1,0,0,Death,Jacob Levi,A,Felsenstein,A,Ihringen,I,68 years,,,,,"""Wittwer""",1401622,,,,,,,1,Jacob Levi,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
 69,1821-1828,62,1822,10 Dec,17:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,I,,,,,,,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
 69,1821-1828,62,1822,10 Dec,17:00,Burial,M,0,0,1,Witness,Abraham Levi,A,Blum,A,Ihringen,I,,,,,,,1301321,,,352,,,,,Abraham Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-62
@@ -317,7 +317,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 70,1821-1828,90,1823,15 Jan,,Wedding,M,0,1,0,Husband's father,Jacob,A,Heilbronner,A,Ihringen,I,,,,,,,1603121,,,127,,,,,Jacob,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
 70,1821-1828,90,1823,15 Jan,,Wedding,F,0,1,0,Husband's mother,Johanna,A,Wertheimer,A,Ihringen,I,,,,,,,2307022,,,,,,,1,Johanna,Werthheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
 70,1821-1828,90,1823,15 Jan,,Wedding,M,0,1,0,Wife's father,Samson Heuum,B,Günzburger,I,Eichstetten,A,,,,,,,2307023,,,,,,,1,Samson,Heuum,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
-70,1821-1828,90,1823,15 Jan,,Wedding,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
+70,1821-1828,90,1823,15 Jan,,Wedding,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
 70,1821-1828,90,1823,15 Jan,,Wedding,M,0,0,1,Witness,Samuel,A,Weil,A,Ihringen,I,,,,,,,1502121,,,510,,,,,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
 71,1821-1828,90,1823,29 Apr,,Wedding,M,1,0,0,Husband,Salomon Levi,A,Felsenstein,A,Ihringen,I,29 years,,,,,,2307111,,,762,,,,,Salomon Levi,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
 71,1821-1828,90,1823,29 Apr,,Wedding,F,1,0,0,Wife,Threina,A,Grombacher,A,"Isenheim, Alsace",A,,,,,,,2307112,,,,,,,,Threina,Grombacher,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-90
@@ -365,7 +365,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 81,1821-1828,132,1824,29 Dec,16:00,Burial,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,I,,,,,,Page written in different handwriting in 1870; ID guess,1200831,,,650,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-132
 81,1821-1828,132,1824,29 Dec,16:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,I,,,,,,Page written in different handwriting in 1870,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-132
 82,1821-1828,165,1825,13 Jan,03:00,Birth,M,1,0,0,Child,Aaron,A,Meyer,A,Ihringen,A,Newborn,,,,,"""acht Tage hernach beschnitten""",2508211,,494,,,,,,Aron,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
-82,1821-1828,165,1825,13 Jan,03:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
+82,1821-1828,165,1825,13 Jan,03:00,Birth,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Mayer,Mayer,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
 82,1821-1828,165,1825,13 Jan,03:00,Birth,F,0,1,0,Mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebekka,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
 82,1821-1828,165,1825,13 Jan,03:00,Birth,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,I,,,,,,,1200831,,,650,,,,,Salomon,Geissmar,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
 82,1821-1828,165,1825,13 Jan,03:00,Birth,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,I,,,,,,,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-165
@@ -505,7 +505,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 106,1821-1828,275,1827,17 Apr,,Burial,M,0,0,1,Witness,Herz Levi,A,Felsenstein,A,Ihringen,A,,,,"""Schutzbürger""","""Viehhändler""",,2710131,,,326,,,,,Herz Levit,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 106,1821-1828,275,1827,17 Apr,,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-275
 107,1821-1828,276,1827,15 Jul,22:00,Death,M,1,0,0,Death,Manke,B,Meyer,A,Ihringen,A,19 years 4 months 9 days,,,"""ledig""",,,2710711,,,,,,,1,Manke,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
-107,1821-1828,276,1827,15 Jul,22:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
+107,1821-1828,276,1827,15 Jul,22:00,Death,M,0,1,0,Father,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 107,1821-1828,276,1827,15 Jul,22:00,Death,F,0,1,0,Mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebecka,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 107,1821-1828,276,1827,17 Jul,,Burial,M,0,0,1,Witness,David,A,Günzburger,A,Ihringen,A,,,,,"""Rabbiner""",,1100133,,,340,,,,,David,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
 107,1821-1828,276,1827,17 Jul,,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475839-276
@@ -771,7 +771,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 153,1829-1834,151,1831,14 Jan,01:00,Birth,M,0,1,0,Father,Jacob,A,Weil,A,Ihringen,A,,,,"""Schutzbürger""",,,2710311,,103,186,,,,,Jacob,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
 153,1829-1834,151,1831,14 Jan,01:00,Birth,F,0,1,0,Mother,Maria,A,Goldschmidt,A,Emmendingen,I,,,,,,,2710312,,103,,,,,,Maria,Goldschmid,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
 153,1829-1834,151,1831,14 Jan,01:00,Birth,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
-153,1829-1834,151,1831,14 Jan,01:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
+153,1829-1834,151,1831,14 Jan,01:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
 154,1829-1834,151,1831,17 Feb,04:00,Birth,M,1,0,0,Child,unnamed,A,Meyer,A,Ihringen,A,Newborn,,,,,,3315411,,,166,,,,,not given,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
 154,1829-1834,151,1831,17 Feb,04:00,Birth,M,0,1,0,Father,Marx,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,3214411,,144,371,,,,,Marx,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
 154,1829-1834,151,1831,17 Feb,04:00,Birth,F,0,1,0,Mother,Lea,A,Heilbronner,A,Ihringen,I,,,,,,,3214412,,144,681,,,,,Lea,Heilbrunner,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-151
@@ -1081,7 +1081,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 212,1829-1834,318,1834,18 Sep,15:00,Birth,F,0,1,0,Mother,Karoline,A,Netter,A,Bühl,I,,,,,,,3418212,,182,369,,,,,Karoline,Netter,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
 212,1829-1834,318,1834,18 Sep,15:00,Birth,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Willmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
 212,1829-1834,318,1834,18 Sep,15:00,Birth,M,0,0,1,Witness,Herz,A,Günzburger,A,Ihringen,A,,,,,"""Vorsteher""",,2206711,,67,,,,,,Herz,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
-213,1829-1834,318,1834,23 Sep,22:00,Birth,F,1,0,0,Child,Karoline,A,Günzburger,A,Ihringen,A,Newborn,,,,,,3621311,,,,,,,,Karoline,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
+213,1829-1834,318,1834,23 Sep,22:00,Birth,F,1,0,0,Child,Karoline,A,Günzburger,A,Ihringen,A,Newborn,,,,,Wedding: http://www.landesarchiv-bw.de/plink/?f=5-480831-132,3621311,,,,,,,,Karoline,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
 213,1829-1834,318,1834,23 Sep,22:00,Birth,M,0,1,0,Father,Herz,A,Günzburger,A,Ihringen,A,,,,,"""Vorsteher""",,2206711,,67,,,,,,Herz,Günzburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
 213,1829-1834,318,1834,23 Sep,22:00,Birth,F,0,1,0,Mother,Brendel,A,Burger,A,Eichstetten,I,,,,,,,2206712,,67,,,,,,Brendel,Burger,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
 213,1829-1834,318,1834,23 Sep,22:00,Birth,M,0,0,1,Witness,Salomon,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger""",,ID guess,1200831,,,650,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475840-318
@@ -1456,12 +1456,12 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 282,1835-1840,296,1839,02 Apr,16:00,Birth,M,0,1,0,Father,Marx Levi,K,Felsenstein,A,Ihringen,A,,,,"""Schutzbürger""",,,3214221,,145,,,,,,Marx,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 282,1835-1840,296,1839,02 Apr,16:00,Birth,F,0,1,0,Mother,Cecilia,A,Ulmo,A,"Sierentz, Upper Alsace",I,,,,,,,3214222,,145,720,,,,,Cäcilie,Ulmo,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 282,1835-1840,296,1839,02 Apr,16:00,Birth,M,0,0,1,Witness,Joseph,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger""",,,2609211,,92,706,,,,,Joseph,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
-282,1835-1840,296,1839,02 Apr,16:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
+282,1835-1840,296,1839,02 Apr,16:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 283,1835-1840,296,1839,25 Jun,16:00,Birth,F,1,0,0,Child,Judith,A,Weil,A,Ihringen,A,Newborn,,,,,,4528311,,,296,,,,,Judith,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 283,1835-1840,296,1839,25 Jun,16:00,Birth,M,0,1,0,Father,Salomon,A,Weil,A ,Ihringen,A,,,,"""Schutzbürger""",,,3621611,,216,,,,,,Salomon,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 283,1835-1840,296,1839,25 Jun,16:00,Birth,F,0,1,0,Mother,Güdele ,A,Wachenheimer,A,Eichstetten,I,,,,,,,3621612,,216,442,,,,,Güdel,Wachenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 283,1835-1840,296,1839,25 Jun,16:00,Birth,M,0,0,1,Witness,Samuel,A,Weil,A,Ihringen,A,,,,"""Schutzbürger""",,,1502121,,,510,,,,,Samuel,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
-283,1835-1840,296,1839,25 Jun,16:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
+283,1835-1840,296,1839,25 Jun,16:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 284,1835-1840,296,1839,09 Jul,08:00,Birth,F,1,0,0,Child,Rebekka,A,Geismar,A,Ihringen,A,Newborn,,,,,,4528411,,,303,,,,,Rebecka,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 284,1835-1840,296,1839,09 Jul,08:00,Birth,M,0,1,0,Father,David,A,Geismar,A,Ihringen,A,,J,,"""Schutzbürger""",,,2709921,,,,,,,,David,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
 284,1835-1840,296,1839,09 Jul,08:00,Birth,F,0,1,0,Mother,Ester,A,Bloch,A,Ihringen,I,,,,,,,2709922,,,,,,,,Esther,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-296
@@ -1517,7 +1517,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 292,1835-1840,299,1839,11 Dec,,Wedding,M,0,0,1,Witness,Seligmann,A,Geismar,A,Ihringen,A,,A,,"""Schutzbürger""",,,4528831,,,,,,,,Seligmann,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-299
 293,1835-1840,300,1839,12 Dec,,Wedding,M,1,0,0,Husband,Hirschel,A,Meyer,A,Ihringen,A,,,,"""neuangehender Schutzbürger""",,,1301411,14,,,,,,,Hirschel,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
 293,1835-1840,300,1839,12 Dec,,Wedding,F,1,0,0,Wife,Mina,A,Heilbronner,A,Eichstetten,I,,,,,,,4529312,,,683,,,,,Mina,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
-293,1835-1840,300,1839,12 Dec,,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,14,Birth of child,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
+293,1835-1840,300,1839,12 Dec,,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,14,Birth of child,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
 293,1835-1840,300,1839,12 Dec,,Wedding,F,0,1,0,Husband's mother,Rebekka,K,Blum,A,Ihringen,I,,,,,,,1100222,,,633,14,Birth of child,,,Fanny,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
 293,1835-1840,300,1839,12 Dec,,Wedding,M,0,1,0,Wife's father,Wolf,A,Heilbronner,A,Eichstetten,A,,,,,,,4529323,,,,,,,,Wolf,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
 293,1835-1840,300,1839,12 Dec,,Wedding,F,0,1,0,Wife's mother,Eva,A,Meyer,A,Eichstetten,I,,,,,,,4529324,,,,,,,,Eva,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-300
@@ -1557,7 +1557,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 299,1835-1840,302,1839,15 Sep,13:00,Death,M,0,1,0,Husband,Heinrich,A,Geismar,A,Ihringen,A,,,,,"""ehemaliger Vorsteher""",,1100232,,,129,,,,1,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
 299,1835-1840,302,1839,15 Sep,13:00,Death,M,0,1,0,Father,Liebmann,A,Bloch,A,Lörrach,A,,,,"""Schutzbürger""",,,4529922,,,,,,,1,Liebmann,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
 299,1835-1840,302,1839,15 Sep,13:00,Death,F,0,1,0,Mother,Eva ,A,Bloch,A,Lörrach,I,,,,,,,4529923,,,,,,,1,Eva,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
-299,1835-1840,302,1839,17 Sep,13:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
+299,1835-1840,302,1839,17 Sep,13:00,Burial,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
 299,1835-1840,302,1839,17 Sep,13:00,Burial,M,0,0,1,Witness,Marx,A,Guggenheimer,A,Ihringen,A,,,,"""Schutzbürger""",,,2407811,,227,758,,,,,Marx,Gugenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
 300,1835-1840,302,1839,09 Oct,16:00,Death,M,1,0,0,Death,Joseph,A,Meyer,A,Ihringen,A,11 months 16 days,,,,,,4427011,270,,,,,,1,Joseph,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
 300,1835-1840,302,1839,09 Oct,16:00,Death,M,0,1,0,Father,Silas,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,4325132,,,,270,Birth of child,,,Silas,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-302
@@ -1741,7 +1741,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 335,1841-1845,62,1841,19 Dec,09:00,Birth,M,1,0,0,Child,Wolf,A,Meyer,A,Ihringen,A,,,,,,,5133511,,,,,,,,Wolf,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
 335,1841-1845,62,1841,19 Dec,09:00,Birth,M,0,1,0,Father,Hirschel,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1301411,14,293,,,,,,Hirschel,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
 335,1841-1845,62,1841,19 Dec,09:00,Birth,F,0,1,0,Mother,Mina,A,Heilbronner,A,Eichstetten,I,,,,,,,4529312,,293,683,,,,,Mina,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
-335,1841-1845,62,1841,27 Dec,08:00,Bris,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meyer,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
+335,1841-1845,62,1841,27 Dec,08:00,Bris,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Meyer,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
 335,1841-1845,62,1841,27 Dec,08:00,Bris,M,0,0,1,Witness,Isaak,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,3418311,,183,653,,,,,Isaac,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-62
 336,1841-1845,63,1841,20 Oct,,Wedding,M,1,0,0,Husband,Salomon,A,Heilbronner,A,Ihringen,A,,,,"""neuangehender Schutzbürger""","""Handelsmann""",,1200611,6,,,,,,,Salomon,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-63
 336,1841-1845,63,1841,20 Oct,,Wedding,F,1,0,0,Wife,Jeanette,K,Felsenstein,A,Ihringen,I,,,,,,,1004711,47,,,,,,,Scheine,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-63
@@ -1955,12 +1955,12 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 372,1841-1845,247,1844,02 Jan,06:00,Birth,M,0,1,0,Father,Samuel,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,2811832,,147,,,,,,Samuel,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 372,1841-1845,247,1844,02 Jan,06:00,Birth,F,0,1,0,Mother,Jeanette,A,Meyer,A,Eichstetten,I,,,,,,,3214712,,147,,,,,,Jeanette,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 372,1841-1845,247,1844,02 Jan,06:00,Birth,F,0,0,1,Witness,Maria Barbara,A,Buri,A,Ihringen,A,,,,,"""Hebamme""","""Ehefrau des verstorbenen hiesigen Bürgers und Taglöhners Georg Müller""",5437231,,,,,,1,,Maria Barbara,Buri,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
-372,1841-1845,247,1844,02 Jan,06:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
+372,1841-1845,247,1844,02 Jan,06:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 373,1841-1845,247,1844,31 Jan,11:00,Birth,M,1,0,0,Child,unnamed,A,Meyer,A,Ihringen,A,Newborn,,,,,"""starb schon nach fünf Stunden""",5437311,,,387,,,,,not given,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 373,1841-1845,247,1844,31 Jan,11:00,Birth,M,0,1,0,Father,Hirschel,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1301411,14,293,,,,,,Hirschel,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 373,1841-1845,247,1844,31 Jan,11:00,Birth,F,0,1,0,Mother,Mina,A,Heilbronner,A,Eichstetten,I,,,,,,,4529312,,293,683,,,,,Mina,Heilbrunner,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 373,1841-1845,247,1844,31 Jan,11:00,Birth,F,0,0,1,Witness,Maria Barbara,A,Buri,A,Ihringen,A,,,,,"""Hebamme""","""Ehefrau des verstorbenen hiesigen Bürgers und Taglöhners Georg Müller""",5437231,,,,,,1,,Maria Barbara,Buri,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
-373,1841-1845,247,1844,31 Jan,11:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
+373,1841-1845,247,1844,31 Jan,11:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 374,1841-1845,247,1844,27 Jan,12:00,Birth,M,1,0,0,Child,Daniel,A,Bloch,A,Ihringen,A,Newborn,,,,,,5437411,,,,,,,,Daniel,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 374,1841-1845,247,1844,27 Jan,12:00,Birth,M,0,1,0,Father,Isaak,A,Bloch,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1603011,30,241,,,,,,Isaac,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
 374,1841-1845,247,1844,27 Jan,12:00,Birth,F,0,1,0,Mother,Margarethe,K,Nordmann,A,"Hegenheim, Alsace",I,,,,,,,4224112,,241,,,,,,Maria,Nordmann,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-247
@@ -2101,7 +2101,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 399,1841-1845,315,1845,09 Jun,05:30,Birth,M,1,0,0,Child,Leopold Levi,A,Blum,A,Ihringen,A,Newborn,,,,,,5539911,,,,,,,,Leopold Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
 399,1841-1845,315,1845,09 Jun,05:30,Birth,M,0,1,0,Father,David,A,Blum,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1502211,22,384,,,,,,David Levi,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
 399,1841-1845,315,1845,09 Jun,05:30,Birth,F,0,1,0,Mother,Babette,A,Weil,A,Kippenheim,I,,,,,,,5438412,,384,,,,,,Babett,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
-399,1841-1845,315,1845,16 Jun,08:00,Bris,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
+399,1841-1845,315,1845,16 Jun,08:00,Bris,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
 399,1841-1845,315,1845,16 Jun,08:00,Bris,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,"""Schutzbürger""","""Vorsänger""",,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
 400,1841-1845,315,1845,20 Jun,15:00,Birth,F,1,0,0,Child,Jeanette,A,Felsenstein,A,Ihringen,A,Newborn,,,,,,5540011,,,,,,,,Jeanette,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
 400,1841-1845,315,1845,20 Jun,15:00,Birth,M,0,1,0,Father,Salomon,A,Felsenstein,A,Ihringen,A,,J,,"""Schutzbürger""","""Handelsmann""",,1502311,23,,648,,,,,Salomon,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-315
@@ -2135,7 +2135,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 405,1841-1845,324,1845,07 Jul,05:00,Death,F,1,0,0,Death,Rosina,A,Heilbronner,A,Ihringen,A,3 years 1 month 18 days,,,,,,5234311,343,,,,,,1,Rosina,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
 405,1841-1845,324,1845,07 Jul,05:00,Death,M,0,1,0,Father,Salomon,A,Heilbronner,A,Ihringen,A,,,,"""Schutzbürger""","""Metzger""",,1200611,6,336,,343,Birth of child,,,Salomon,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
 405,1841-1845,324,1845,07 Jul,05:00,Death,F,0,1,0,Mother,Jeanette,A,Felsenstein,A,Ihringen,A,,,,,,,1004711,47,336,,343,Birth of child,,,Jeannette,Felsenstein,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
-405,1841-1845,324,1845,09 Jul,06:00,Burial,M,0,0,1,Witness,Meyer,K,Meyer,A,Ihringen,A,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Marx,Maier,1,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
+405,1841-1845,324,1845,09 Jul,06:00,Burial,M,0,0,1,Witness,Meyer,K,Meyer,A,Müllheim,I,,,,"""Schutzbürger""",,,1100221,,,566,,,,,Marx,Maier,1,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
 405,1841-1845,324,1845,09 Jul,06:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-324
 406,1846-1851,44,1846,01 Jan,18:00,Birth,F,1,0,0,Child,Judith,A,Heilbronner,A,Ihringen,A,Newborn,,,,,Breisach wedding: http://www.landesarchiv-bw.de/plink/?f=5-475823-361,6140611,,,,,,,,Judith,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-44
 406,1846-1851,44,1846,01 Jan,18:00,Birth,M,0,1,0,Father,Salomon,A,Heilbronner,A,Ihringen,A,,,,"""Schutzbürger""","""Metzger""",,1200611,6,336,,,,,,Salomon,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-44
@@ -2265,7 +2265,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 430,1846-1851,90,1847,27 Oct,,Wedding,F,1,0,0,Wife,Rebekka,K,Meyer,I,Ihringen,A,,,,,,"""Moses Weils Witwe""; first wedding in Emmendingen: http://www.landesarchiv-bw.de/plink/?f=5-478608-119",1703511,35,,,,,,,Rosa,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
 430,1846-1851,90,1847,27 Oct,,Wedding,M,0,1,0,Husband's father,Philipp,A,Heilbronner,A,Ihringen,A,,,,,,,1603111,,31,761,45,Birth of child,,,Philipp,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
 430,1846-1851,90,1847,27 Oct,,Wedding,F,0,1,0,Husband's mother,Judith,A,Meyer,I,Ihringen,I,,,,,,,1603112,,31,339,45,Birth of child,,1,Judith,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
-430,1846-1851,90,1847,27 Oct,,Wedding,M,0,1,0,Wife's father,Meyer,A,Meyer,A,Ihringen,A,,,,,,,1100221,,,566,,,,,Maier,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
+430,1846-1851,90,1847,27 Oct,,Wedding,M,0,1,0,Wife's father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,,,,,Maier,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
 430,1846-1851,90,1847,27 Oct,,Wedding,F,0,1,0,Wife's mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebecca,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
 430,1846-1851,90,1847,27 Oct,,Wedding,M,0,1,0,Wife's first husband,Moses,A,Weil,A,Emmendingen,A,,,,,,,4529223,,,,,,,1,Moses,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
 430,1846-1851,90,1847,27 Oct,,Wedding,M,0,0,1,Witness,Moses,I,Reiss,A,Breisach,A,,,,,"""Bezirksrabbiner von Breisach zu Freiburg""",,3418231,,,,,,,,not given,Reiss,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-90
@@ -2532,7 +2532,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 479,1846-1851,300,1851,08 Aug,02:00,Birth,M,0,1,0,Father,David,A,Blum,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,1502211,22,384,,,,,,David,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
 479,1846-1851,300,1851,08 Aug,02:00,Birth,F,0,1,0,Mother,Babette,A,Weil,A,Kippenheim,I,,,,,,,5438412,,384,,,,,,Babette,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
 479,1846-1851,300,1851,08 Aug,02:00,Birth,M,0,0,1,Witness,Abraham,A,Blum,A,Ihringen,A,,,,"""Bürger""","""Handels[mann]""",,1301011,10,,,,,,,Abraham,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
-479,1846-1851,300,1851,08 Aug,02:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handels[mann]""",,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
+479,1846-1851,300,1851,08 Aug,02:00,Birth,M,0,0,1,Witness,Meyer,A,Meyer,A,Müllheim,I,,,,"""Bürger""","""Handels[mann]""",,1100221,,,566,,,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
 480,1846-1851,300,1851,02 Nov,19:00,Birth,M,1,0,0,Child,Herz,A,Meyer,A,Ihringen,A,Newborn,,,,,,6648011,,,,,,,,Herz,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
 480,1846-1851,300,1851,02 Nov,19:00,Birth,M,0,1,0,Father,Silas,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,4325132,,,,,,,,Silas,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
 480,1846-1851,300,1851,02 Nov,19:00,Birth,F,0,1,0,Mother,Eva,A,Bloch,A,Ihringen,I,,,,,,,4325922,,,,,,,,Eva,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475843-300
@@ -2590,7 +2590,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 490,1852-1858,39,1852,07 Nov,06:00,Birth,M,1,0,0,Child,Marx,A,Meyer,A,Ihringen,A,Newborn,,,,,,7149011,,,,,,,,Marx,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
 490,1852-1858,39,1852,07 Nov,06:00,Birth,M,0,1,0,Father,Aaron,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,2508211,82,494,,,,,,Aron,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
 490,1852-1858,39,1852,07 Nov,06:00,Birth,F,0,1,0,Mother,Babette,A,Meyer,A,Müllheim,I,,,,,,,7149022,,494,634,,,,,Babette,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
-490,1852-1858,39,1852,07 Nov,06:00,Birth,M,0,0,1,Witness,Meyer,K,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handels[mann]""",,1100221,,,566,,,,,Marx,Meier,1,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
+490,1852-1858,39,1852,07 Nov,06:00,Birth,M,0,0,1,Witness,Meyer,K,Meyer,A,Müllheim,I,,,,"""Bürger""","""Handels[mann]""",,1100221,,,566,,,,,Marx,Meier,1,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
 490,1852-1858,39,1852,07 Nov,06:00,Birth,M,0,0,1,Witness,Hirschel,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handels[mann]""",,1301411,14,293,,,,,,Hirschel,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
 491,1852-1858,39,1852,26 Nov,06:00,Birth,F,1,0,0,Child,Justina,A,Bloch,A,Ihringen,A,Newborn,,,,,,7149111,,,,,,,,Justina,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
 491,1852-1858,39,1852,26 Nov,06:00,Birth,M,0,1,0,Father,Meyer,A,Bloch,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,2206411,64,385,,,,,,Meier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-39
@@ -2609,7 +2609,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 493,1852-1858,40,1852,01 Dec,05:00,Birth,M,0,0,1,Witness,Wolf,A,Geismar,A,Ihringen,A,,,,"""Bürger""","""Handels[mann]""",,2811532,,117,,,,,,Wolf,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
 494,1852-1858,40,1852,28 Jan,12:00,Wedding,M,1,0,0,Husband,Aaron,A,Meyer,A,Ihringen,A,,,,"""neuangehender Bürger""","""Handelsmann""","First name also written ""Aaron"" on register",2508211,82,,,,,,,Aron,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
 494,1852-1858,40,1852,28 Jan,12:00,Wedding,F,1,0,0,Wife,Babette,A,Meyer,A,Müllheim,I,,,,,,,7149022,,,634,,,,,Babette,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
-494,1852-1858,40,1852,28 Jan,12:00,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,1100221,,,566,82,Birth of child,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
+494,1852-1858,40,1852,28 Jan,12:00,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Müllheim,I,,,,"""Bürger""","""Handelsmann""",,1100221,,,566,82,Birth of child,,,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
 494,1852-1858,40,1852,28 Jan,12:00,Wedding,F,0,1,0,Husband's mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,82,Birth of child,,,Rebekka,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
 494,1852-1858,40,1852,28 Jan,12:00,Wedding,M,0,1,0,Wife's father,Salomon,A,Meyer,A,Müllheim,A,,,,"""Bürger""","""Handelsmann""",,7149423,,,,,,,,Salomon,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
 494,1852-1858,40,1852,28 Jan,12:00,Wedding,F,0,1,0,Wife's mother,Judith,A,Meyer,A,Müllheim,I,,,,,,,7149424,,,,,,,1,Judith,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-40
@@ -3023,7 +3023,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 565,1852-1858,304,1857,05 Aug,,Wedding,M,0,0,1,Witness,Moses,I,Reiss,A,Breisach,A,,,,,"""Bezirksrabbiner von Breisach in Freiburg""",,3418231,,,,,,,,not given,Reiss,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-304
 565,1852-1858,304,1857,05 Aug,,Wedding,M,0,0,1,Witness,Julius,A,Homburger,A,Karlsruhe,A,,,,,"""Handelsmann""",,7656532,,,,,,,,Julius,Homburger,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-304
 565,1852-1858,304,1857,05 Aug,,Wedding,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,A,,,,,"""israel. Vorsteher""",,2206411,64,385,,,,,,Meier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-304
-566,1852-1858,305,1857,03 Jan,03:00,Death,M,1,0,0,Death,Meyer,A,Meyer,A,Ihringen,A,96 years,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,,,,,1,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-305
+566,1852-1858,305,1857,03 Jan,03:00,Death,M,1,0,0,Death,Meyer,A,Meyer,A,Müllheim,I,96 years,,,"""Schutzbürger""","""Handelsmann""",Town of origin comes from Schutzannahme: http://www.landesarchiv-bw.de/plink/?f=4-4302858,1100221,,,,,,,1,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-305
 566,1852-1858,305,1857,03 Jan,03:00,Death,F,0,1,0,Wife,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,,,,,Rebecca,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-305
 566,1852-1858,305,1857,03 Jan,03:00,Death,M,0,1,0,Father,Moses,A,Meyer,A,Müllheim,A,,,,"""Bürger""","""Handelsmann""",,7656622,,,,,,,,Moses,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-305
 566,1852-1858,305,1857,03 Jan,03:00,Death,F,0,1,0,Mother,Regina,A,Weil,A,Müllheim,I,,,,,,,7656623,,,,,,,,Regina,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475844-305
@@ -3351,7 +3351,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 625,1859-1864,234,1862,05 Nov,13:00,Wedding,M,0,0,1,Witness,Joseph Moses,A,Weil,A,Emmendingen,A,,,,,"""Synagogendiener""",,7555033,,,,,,,,Joseph Moses,Weil,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
 626,1859-1864,234,1862,30 Dec,12:30,Wedding,M,1,0,0,Husband,Aaron,A,Meyer,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""","""geboren den 13 Januar 1825""; ""Wittwer""; ""mosaischer Religion""",2508211,82,,,634,Death of first wife,,,Aron,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
 626,1859-1864,234,1862,30 Dec,12:30,Wedding,F,1,0,0,Wife,Rebekka,A,Wertheimer,A,Breisach,I,,,,,,"""geboren den 11 Februar 1828"" (birth: http://www.landesarchiv-bw.de/plink/?f=5-475817-50); ""mosaischer Religion""",8462612,,,,,,,,Rebecca,Wertheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
-626,1859-1864,234,1862,30 Dec,12:30,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Ihringen,A,,,,,,,1100221,,,566,82,Birth of child,,1,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
+626,1859-1864,234,1862,30 Dec,12:30,Wedding,M,0,1,0,Husband's father,Meyer,A,Meyer,A,Müllheim,I,,,,,,,1100221,,,566,82,Birth of child,,1,Meyer,Meyer,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
 626,1859-1864,234,1862,30 Dec,12:30,Wedding,F,0,1,0,Husband's mother,Rebekka,A,Blum,A,Ihringen,I,,,,,,,1100222,,,633,82,Birth of child,,1,Rebecca,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
 626,1859-1864,234,1862,30 Dec,12:30,Wedding,M,0,1,0,Wife's father,Lazarus,A,Wertheimer,A,Breisach,A,,,,,,,8462623,,,,,,,1,Lazarus,Wertheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
 626,1859-1864,234,1862,30 Dec,12:30,Wedding,F,0,1,0,Wife's mother,Magdalena,A,Netter,A,Breisach,I,,,,,,,8462624,,,,,,,,Magdalena,Netter,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-234
@@ -3390,7 +3390,7 @@ EntryNum,Standesbuch,Bild,Year,Date,Time,Event,Sex,PrimaryInd,SecondaryInd,Witne
 632,1859-1864,236,1862,09 May,06:00,Burial,M,0,0,1,Witness,Jacob,A,Heilbronner,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",ID guess,3315911,159,,,,,,,Jakob,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
 632,1859-1864,236,1862,09 May,06:00,Burial,M,0,0,1,Witness,Ludwig,A,Bühler,A,Ihringen,A,,,,"""Bürger""","""Stubenwirth""",,8463232,,,,,,1,,Ludwig,Bühler,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
 633,1859-1864,236,1862,15 Jul,06:00,Death,F,1,0,0,Death,Rebekka,A,Blum,K,Ihringen,I,76 years,,,,,"""Wittwe""",1100222,,,,,,,1,Rebecka,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
-633,1859-1864,236,1862,15 Jul,06:00,Death,M,0,1,0,Husband,Meyer,A,Meyer,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,1,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
+633,1859-1864,236,1862,15 Jul,06:00,Death,M,0,1,0,Husband,Meyer,A,Meyer,A,Müllheim,I,,,,"""Schutzbürger""","""Handelsmann""",,1100221,,,566,,,,1,Meier,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
 633,1859-1864,236,1862,15 Jul,06:00,Death,M,0,1,0,Father,Heinrich Levi,K,Blum,A,Ihringen,A,,,,,"""israelitischer Lehrer""",,1100231,,,51,,,,1,Heinrich,Blum,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
 633,1859-1864,236,1862,15 Jul,06:00,Death,F,0,1,0,Mother,Zippora,A,Blum,I,Ihringen,I,,,,,,,8463323,,,,,,,1,Zipora,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
 633,1859-1864,236,1862,16 Jul,18:00,Burial,M,0,0,1,Witness,Lazarus,A,Bär,A,Siegelsbach,I,,,,,"""israelitischer Hauptlehrer""",,7554921,,551,,,,,,Lazarus,Bär,0,http://www.landesarchiv-bw.de/plink/?f=5-475845-236
