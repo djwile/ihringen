@@ -1668,7 +1668,7 @@
 321,1835-1840,380,1840,03 Jan,16:00,Death,F,1,0,0,Death,Barbara,A,Guggenheimer,A,Ihringen,I,97 years,,,,,"""Wittwe""",4632111,,,,,,,1,Barbara,Gugenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
 321,1835-1840,380,1840,03 Jan,16:00,Death,M,0,1,0,Husband,not given,A,Kallman,A,Ihringen,I,,,,,,,4632121,,,,,,,1,not given,Kallmann,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
 321,1835-1840,380,1840,03 Jan,16:00,Death,M,0,1,0,Father,Marx,A,Guggenheimer,A,Ihringen,A,,,,"""Schutzbürger""",,,1603222,,,,,,,1,Marx,Gugenheimer,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
-321,1835-1840,380,1840,03 Jan,16:00,Death,F,0,1,0,Mother,Jeanette,A,Geismar,A,Ihringen,I,,,,,,,4632123,,,,,,,1,Jeanette,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
+321,1835-1840,380,1840,03 Jan,16:00,Death,F,0,1,0,Mother,Jeanette,A,Geismar,A,Ihringen,I,,,,,,Burial: http://www.landesarchiv-bw.de/plink/?f=2-2519650,4632123,,,,,,,1,Jeanette,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
 321,1835-1840,380,1840,05 Jan,16:00,Burial,M,0,0,1,Witness,Martin,A,Gybson,A,Ihringen,A,,,,"""Bürger""","""Todtengräber""",,4632031,,,,,,1,,Martin,Gybson,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
 321,1835-1840,380,1840,05 Jan,16:00,Burial,M,0,0,1,Witness,Lazarus,A,Wilmersdorf,A,Ihringen,A,,,,,"""Vorsänger""",,1401732,,,725,,,,,Lazarus,Wilmersdorf,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
 322,1835-1840,380,1840,08 Mar,16:00,Death,F,1,0,0,Death,Gietel,K,Greisheimer,K,Breisach,I,56 years,,,,,Age at either marriage or death is incorrect,1502712,,27,,,,,1,Gattung,Reishofer,0,http://www.landesarchiv-bw.de/plink/?f=5-475841-380
@@ -1996,13 +1996,13 @@
 380,1841-1845,249,1844,03 Oct,02:00,Birth,M,1,0,0,Child,Salomon,A,Geismar,A,Ihringen,A,Newborn,,,,,Twin,5438011,,,,,,,,Salomon,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 380,1841-1845,249,1844,03 Oct,02:00,Birth,M,0,1,0,Father,David,A,Geismar,A,Ihringen,A,,J,,"""Schutzbürger""","""Handelsmann""","""Heinrichs Sohn""; implied ""Jung.""",2709921,,,,,,,,David,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 380,1841-1845,249,1844,03 Oct,02:00,Birth,F,0,1,0,Mother,Ester,A,Bloch,A,Ihringen,I,,,,,,,2709922,,,,,,,,Esther,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
-380,1841-1845,249,1844,03 Oct,02:00,Birth,M,0,1,0,Father's father,Heinrich,A,Geismar,I,Ihringen,A,,,,,,,1100232,,,129,,,,1,Heinrich,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
+380,1841-1845,249,1844,03 Oct,02:00,Birth,M,0,1,0,Father's father,Heinrich,A,Geismar,I,Ihringen,A,,,,,,,2609221,,,129,,,,1,Heinrich,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 380,1841-1845,249,1844,10 Oct,08:00,Bris,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,2206411,64,385,,,,,,Meier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 380,1841-1845,249,1844,10 Oct,08:00,Bris,M,0,0,1,Witness,David,A,Geismar,A,Ihringen,A,,A,,"""Schutzbürger""","""Handelsmann""",,3213221,,,611,,,,,David,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 381,1841-1845,249,1844,03 Oct,02:30,Birth,F,1,0,0,Child,Fanny,A,Geismar,A,Ihringen,A,Newborn,,,,,Twin,5438111,,,,,,,,Fanny,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 381,1841-1845,249,1844,03 Oct,02:30,Birth,M,0,1,0,Father,David,A,Geismar,A,Ihringen,A,,J,,"""Schutzbürger""","""Handelsmann""","""Heinrichs Sohn""; implied ""Jung.""",2709921,,,,,,,,David,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 381,1841-1845,249,1844,03 Oct,02:30,Birth,F,0,1,0,Mother,Ester,A,Bloch,A,Ihringen,I,,,,,,,2709922,,,,,,,,Esther,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
-381,1841-1845,249,1844,03 Oct,02:30,Birth,M,0,1,0,Father's father,Heinrich,A,Geismar,A,Ihringen,A,,,,,,,1100232,,,129,,,,1,Heinrich,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
+381,1841-1845,249,1844,03 Oct,02:30,Birth,M,0,1,0,Father's father,Heinrich,A,Geismar,A,Ihringen,A,,,,,,,2609221,,,129,,,,1,Heinrich,not given,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 381,1841-1845,249,1844,03 Oct,02:30,Birth,M,0,0,1,Witness,Meyer,A,Bloch,A,Ihringen,A,,,,"""Schutzbürger""","""Handelsmann""",,2206411,64,385,,,,,,Meier,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 381,1841-1845,249,1844,03 Oct,02:30,Birth,M,0,0,1,Witness,David,A,Geismar,A,Ihringen,A,,A,,"""Schutzbürger""","""Handelsmann""",,3213221,,,611,,,,,David,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
 382,1841-1845,249,1844,25 Nov,14:00,Birth,F,1,0,0,Child,Sara,A,Meyer,A,Ihringen,A,Newborn,,,,,,5438211,,,389,,,,,Sara,Meier,0,http://www.landesarchiv-bw.de/plink/?f=5-475842-249
@@ -3796,7 +3796,7 @@
 705,1865-1870,159,1866,21 Jun,17:00,Burial,M,0,0,1,Witness,Wolf David,K,Geismar,A,Breisach,I,,,,"""Bürger""","""Handels[mann]""",ID guess,8360911,,609,,,,,,Wolf,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
 706,1865-1870,159,1866,22 Jul,20:30,Death,M,1,0,0,Death,Joseph,A,Geismar,A,Ihringen,A,76 years,,,"""Bürger""","""Handelsmann""","""Wittwer""",2609211,,92,,,,,1,Joseph,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
 706,1865-1870,159,1866,22 Jul,20:30,Death,F,0,1,0,Wife,Jachet,K,Bloch,A,Dettensee,I,,,,,,,2609212,,92,631,,,,1,Judith,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
-706,1865-1870,159,1866,22 Jul,20:30,Death,M,0,1,0,Father,Heinrich,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger"" ","""Handelsmann""",,2609221,,,,,,,1,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
+706,1865-1870,159,1866,22 Jul,20:30,Death,M,0,1,0,Father,Heinrich,A,Geismar,A,Ihringen,A,,,,"""Schutzbürger"" ","""Handelsmann""",,,,,,,,,1,Heinrich,Geismar,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
 706,1865-1870,159,1866,22 Jul,20:30,Death,F,0,1,0,Mother,Jachet,K,Bloch,A,Sulzburg,I,,,,,,,2609222,,,150,,,,1,Judith,Bloch,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
 706,1865-1870,159,1866,24 Jul,15:00,Burial,M,0,0,1,Witness,Lazarus,A,Bär,A,Siegelsbach,I,,,,,"""Hauptlehrer der israelitischen Schule""",,7554921,,551,,,,,,Lazarus,Bär,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
 706,1865-1870,159,1866,24 Jul,15:00,Burial,M,0,0,1,Witness,Leopold,A,Heilbronner,A,Ihringen,A,,,,"""Bürger""","""Handelsmann""",,2307011,,86,,,,,,Leopold,Heilbronner,0,http://www.landesarchiv-bw.de/plink/?f=5-475846-159
