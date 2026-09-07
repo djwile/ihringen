@@ -1,0 +1,285 @@
+{% extends "base.html" %}
+
+{% block title %}Ihringen Jewish records search{% endblock %}
+
+{% block additional_styles %}
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .container h1 {
+            margin-left: 40px;
+            font-size: 1.8rem;
+        }
+        .container p{
+            line-height: 1.5;
+        }
+        .textbox {
+            padding-bottom: 5px;
+        }
+        .search-container {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 15px 10px;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            width: 95%;
+        }
+        .search-text {
+            grid-column: 1 / span 2;
+            padding: 5px;
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .boxfix {
+            grid-column: 1 / span 2;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        .search-container input[type="checkbox"] {
+            transform: scale(1.2);
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .search-container label {
+            text-align: right;
+            padding-top: 9px;
+            padding-right: 2px;
+            font-size: 16px;
+            color: #333;
+        }
+        .search-container label[for="abridged-data"],
+        label[for="witness-ind"] {
+            text-align: left;
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+        .search-container button {
+            grid-column: 1 / span 2;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            min-height: 44px;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            font-size: .95em;
+        }
+        td {
+            padding: 5px 20px;
+            text-align: right;
+        }
+        td:nth-child(1) {
+            padding-left: 10px;
+            text-align: left;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+        th {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffe066;
+            border-block: thick solid black;
+        }
+
+        /* Added Mobile Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .search-container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                margin: 20px auto;
+            }
+
+            .search-container label {
+                text-align: left;
+                padding-top: 5px;
+                padding-bottom: 2px;
+                grid-column: 1 / span 2;
+            }
+
+            .search-container input[type="text"] {
+                grid-column: 1 / span 2;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            td, th {
+                padding: 8px 6px;
+            }
+
+            .container h1 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Search the Ihringen Jewish Standesbücher</h1>
+        <p>The Baden Standesbücher, or civil status registries, attempted to record every birth, marriage, and death in the Grand Duchy of Baden from 1810 to 1870. The Landesarchiv (State Archive) Baden-Württemberg has scanned these registries in their entirety and made them available online. This site contains the records from the small Jewish community of the town of Ihringen, completely indexed and fully searchable. For search tips and help getting started, see below.</p>
+
+        <!-- CSV Data Filter Form -->
+        <form method="POST" action="/search" target="_blank">
+            <div class="search-container">
+
+                <div class="search-text">
+                Specific search
+                </div>
+
+                <label for="search-input-entryd">Entry:</label>
+                <input type="text" name="search-input-entry" placeholder="Entry number (1-765)...">
+
+                <label for="search-input-person-id">Person ID:</label>
+                <input type="text" name="search-input-person-id" placeholder="Person ID...">
+
+                <div class="search-text">
+                General search
+                </div>
+
+                <label for="search-input-given-name">Given Name:</label>
+                <input type="text" name="search-input-given-name" placeholder="Given Name...">
+
+                <label for="search-input-surname">Surname:</label>
+                <input type="text" name="search-input-surname" placeholder="Surname...">
+
+                <label for="search-input-town">Town:</label>
+                <input type="text" name="search-input-town" placeholder="Town...">
+
+                <label for="search-input-comments">Comments:</label>
+                <input type="text" name="search-input-comments" placeholder="Comments...">
+
+                <label for="search-input-year">Year:</label>
+                <input type="text" name="search-input-year" placeholder="Year...">
+
+                <div class="boxfix">
+                <input type="checkbox" name="abridged-data" id="abridged-data" checked="">
+                <label for="abridged-data">Show only abridged data in results</label>
+                </div>
+
+                <div class="boxfix">
+                <input type="checkbox" name="witness-ind" id="witness-ind" checked="">
+                <label for="witness-ind">Exclude event witness data from results</label>
+                </div>
+
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- More content -->
+        <div class="textbox">
+        <h3>Search tips</h3>
+        <p>All <b>Given Names</b> and <b>Surnames</b> have been "normalized" to handle the many spelling variations used throughout the Standesbücher, ensuring each individual's name is spelled consistently in every record. A single spelling has been arbitrarily determined for all phonetically equivalent surnames, while two different people may have the same given name spelled differently.</p> 
+        <p>See below for a table of the most common surnames by their normalized spelling. The exact spelling of each name on each record can be viewed by unchecking the checkbox labeled "<b>Show only abridged data in results</b>." For full details on which data fields are included and excluded in the abridged search, refer to the <a href="{{ url_for('data_dictionary') }}" target="_blank">data dictionary</a>.</p>
+        <p>The <b>Given Name</b>, <b>Surname</b>, and <b>Town</b> fields accept the wildcards '%' for multiple-character replacement and '_' for single-character replacement. If no wildcards are used, a version of the <a href="https://en.wikipedia.org/wiki/Cologne_phonetics" target="_blank">Cologne phonetics algorithm</a> is automatically applied to these fields to allow for alternate and phonetic spellings.</p>
+        <p>The <b>Town</b> field refers to the individual's town of origin. To search for regions and countries outside of Baden, it is often best to include a '%' wildcard before and after the region or country name (e.g., search "%Switzerland%" instead of "Switzerland" or "%Alsace%" instead of "Alsace").</p>
+        <p>Searching the <b>Comments</b> field returns all entries containing any text string in a column of the dataset called "Notes" matching the search term. The "Notes" column may contain commentary from the record about the individual, links to records outside the Ihringen Standesbücher pertaining to the individual, or interesting notes about the record itself.</p>
+        <p>Event witness data can be obtained by unchecking the checkbox labeled "<b>Exclude event witness data from results</b>." Witness data can be interesting in its own right, but is generally of little genealogical significance. More than 95% of records list witnesses to the event.</p>
+        <p>If you are unsure where to begin, simply hitting <b>Search</b> with all fields empty will return the entire dataset (765 entries, 952 individuals, 4133 rows).</p>
+        </div>
+        <div class="textbox">
+        <h3>Major surnames</h3>
+        <p>The table below contains the "normalized" spelling of the 10 most common surnames which appear in the Ihringen Standesbücher. However, this table represents just a small portion of the 146 surnames in the dataset (or 86 excluding witnesses).</p>
+        <table>
+            <tr>
+                <th>Surname</th>
+                <th>Individuals</th>
+                <th>Unique spellings</th>
+            </tr>
+            <tr>
+                <td>MEYER</td>
+                <td>128</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>BLOCH</td>
+                <td>118</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>WEIL</td>
+                <td>99</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>GEISMAR</td>
+                <td>76</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>HEILBRONNER</td>
+                <td>68</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>BLUM</td>
+                <td>59</td>
+                <td>1</td>
+            <tr>
+                <td>FELSENSTEIN</td>
+                <td>46</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>GÜNZBURGER</td>
+                <td>37</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>GUGGENHEIMER</td>
+                <td>32</td>
+                <td>4</td>
+            <tr>
+                <td>WILMERSDORF</td>
+                <td>17</td>
+                <td>2</td>
+        </table>
+        </div>
+    </div>
+{% endblock %}

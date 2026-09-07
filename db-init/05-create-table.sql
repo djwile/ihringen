@@ -1,0 +1,45 @@
+\connect ihringen
+
+CREATE TABLE IF NOT EXISTS ihringen.ihringen_data
+(
+    entrynum integer NOT NULL,
+    standesbuch character varying(9),
+    bild integer,
+    year integer,
+    date character varying(6),
+    "time" time without time zone,
+    event character varying(32) NOT NULL,
+    sex character varying(1),
+    primaryind boolean,
+    secondaryind boolean,
+    witnessind boolean,
+    relationship character varying(32) NOT NULL,
+    firstnamenorm character varying(32),
+    firstnamecert character varying(1),
+    lastnamenorm character varying(32),
+    lastnamecert character varying(1),
+    townoforigin character varying(64),
+    towncert character varying(1),
+    age character varying(64),
+    jungaltind character varying(1),
+    illegitind boolean,
+    status character varying(128),
+    occupation character varying(128),
+    notes character varying,
+    personid character varying(7) NOT NULL,
+    birthxref integer,
+    marriagexref integer,
+    deathxref integer,
+    otherxref integer,
+    otherxrefevent character varying(32),
+    nonjewind boolean,
+    deadind boolean,
+    firstnamexct character varying(32),
+    lastnamexct character varying(32),
+    mistakennameind boolean,
+    permalink character varying(60),
+    CONSTRAINT primary_key PRIMARY KEY (entrynum, personid, event, relationship)
+);
+
+ALTER TABLE IF EXISTS ihringen.ihringen_data
+    OWNER to ihringen;

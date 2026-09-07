@@ -1,0 +1,16 @@
+[Unit]
+Description=Ihringen search app (search_app) socket
+PartOf=search_app.service
+
+[Socket]
+ListenStream=/home/dwile/flaskapps/search_app/sockets/search_app.sock
+# Our service won't need permissions for the socket, since it
+# inherits the file descriptor by socket activation.
+# Only the nginx daemon will need access to the socket:
+SocketUser=dwile
+SocketGroup=nginx
+# Once the user/group is correct, restrict the permissions:
+SocketMode=0660
+
+[Install]
+WantedBy=sockets.target

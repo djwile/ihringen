@@ -1,0 +1,18 @@
+[Unit]
+Description=guniciorn instance to serve the Ihringen search app (search_app)
+After=network.target
+
+[Service]
+User=dwile
+Group=nginx
+WorkingDirectory=/home/dwile/flaskapps/search_app
+Environment="PYTHONPATH=/home/dwile/flaskapps/search_app/searchenv/bin"
+Environment="PATH=/home/dwile/flaskapps/search_app/searchenv/bin:$PATH"
+ExecStart=/home/dwile/flaskapps/search_app/searchenv/bin/gunicorn --workers 4 --bind unix:/home/dwile/flaskapps/search_app/sockets/search_app.sock wsgi
+SELinuxContext=system_u:system_r:httpd_sys_script_t:s0
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

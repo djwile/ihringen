@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ihringen Jewish records search{% endblock %}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f6f7f1;
+        }
+        .toolbar {
+            background-color: #ffe066;
+            padding: 10px 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .toolbar-links {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .toolbar-links a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px 40px;
+            display: inline-block;
+        }
+        .toolbar-links a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            flex: 1;
+        }
+        .footer {
+            width: 100%;
+            margin-top: auto;
+        }
+        .footer p {
+            padding: 0;
+            margin-left: 5px;
+            line-height: 1; /* Removes any extra space below the image */
+            font-family: "Times New Roman", serif;
+            font-size: .875em;
+        }
+        .footer img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes any default inline spacing */
+        }
+        /* Mobile responsive design */
+        @media screen and (max-width: 768px) {
+            .toolbar-links {
+                text-align: left;
+                padding: 0 10px;
+            }
+
+            .toolbar-links a {
+                display: block;
+                padding: 10px 0;
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+        /* Tablet and medium-sized screens */
+        @media screen and (min-width: 769px) and (max-width: 1200px) {
+            .content {
+                padding: 20px 40px;
+            }
+
+            .toolbar-links {
+                padding: 0 40px;
+            }
+        }
+    </style>
+    {% block additional_styles %}{% endblock %}
+</head>
+<body>
+    <div class="toolbar">
+        <div class="toolbar-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('data_dictionary') }}">Data dictionary</a>
+            <a href="{{ url_for('earlier_records') }}">Earlier records</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        <img src="{{ url_for('static', filename='ihringen_postcard01-1a.jpg') }}" alt="Detail from a historical Ihringen postcard showing an illustrated view of the town from the heights of a vineyard through a clearing between trees. The town church is the most dominant structure in the town, while the much smaller, since-destroyed synagogue is visible directly to the right of the church. Behind the town's furthest houses, rolling hills hold more vineyards and trees.">
+        <p>© 2025, <a href="{{ url_for('contact') }}" target="_blank">David Wile</a>. All rights reserved.</p>
+    </div>
+</body>
+</html>

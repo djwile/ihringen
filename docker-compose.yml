@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: search_app_web
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: ihringen://ihringen_appuser:ihringen@db:5432/search_app_db
+    restart: unless-stopped
+
+  db:
+    image: postgres:18
+    container_name: search_app_db
+    environment:
+      POSTGRES_DB: search_app_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db-init:/docker-entrypoint-initdb.d
+      - ./data:/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
