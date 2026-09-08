@@ -9,7 +9,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: ihringen://ihringen_appuser:ihringen@db:5432/search_app_db
+      DATABASE_URL: postgres://ihringen_appuser:ihringen@db:5432/search_app_db
     restart: unless-stopped
 
   db:
