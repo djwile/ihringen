@@ -13,7 +13,7 @@ application = Flask(__name__)
 def fetch_data():
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     cur = conn.cursor()
-    cur.execute("SELECT * FROM ihringen.ihringen")
+    cur.execute("SELECT * FROM ihringen.ihringen_data")
     rows = cur.fetchall()
     colnames = [desc[0] for desc in cur.description]
     df = pd.DataFrame(rows, columns = colnames)
