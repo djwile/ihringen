@@ -40,12 +40,12 @@ def fetch_data():
 """
 def koelner_phonetik(name):
 """    
-    """
+"""
     Implements the Kölner Phonetik (Cologne Phonetics) algorithm for German phonetic matching.
     Adapted for historical German-Jewish names from the 19th century.
     
     Rules based on: https://de.wikipedia.org/wiki/Kölner_Phonetik
-    """ 
+""" 
 """
     if not name:
         return "0000"
