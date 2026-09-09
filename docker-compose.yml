@@ -9,14 +9,14 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://ihringen_appuser:ihringen@db:5432/search_app_db
+      DATABASE_URL: postgres://ihringen_appuser:ihringen@db:5432/ihringen
     restart: unless-stopped
 
   db:
     image: postgres:18
     container_name: search_app_db
     environment:
-      POSTGRES_DB: search_app_db
+      POSTGRES_DB: ihringen
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
