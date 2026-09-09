@@ -1,6 +1,6 @@
 CREATE OR REPLACE VIEW ihringen.ihringen_data_main
- AS
- SELECT entrynum,
+AS
+SELECT entrynum,
     standesbuch,
     bild,
     year,
@@ -36,8 +36,8 @@ CREATE OR REPLACE VIEW ihringen.ihringen_data_main
     lastnamexct,
     mistakennameind,
     permalink
-   FROM ihringen.ihringen_data
-  WHERE witnessind = false;
+FROM ihringen.ihringen_data
+WHERE witnessind = false;
 
 ALTER TABLE ihringen.ihringen_data_main
     OWNER TO ihringen;
