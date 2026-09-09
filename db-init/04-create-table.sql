@@ -1,5 +1,3 @@
-\connect ihringen
-
 CREATE TABLE IF NOT EXISTS ihringen.ihringen_data
 (
     entrynum integer NOT NULL,
@@ -41,5 +39,5 @@ CREATE TABLE IF NOT EXISTS ihringen.ihringen_data
     CONSTRAINT primary_key PRIMARY KEY (entrynum, personid, event, relationship)
 );
 
-ALTER TABLE IF EXISTS ihringen.ihringen_data
+ALTER TABLE ihringen.ihringen_data
     OWNER to ihringen;
