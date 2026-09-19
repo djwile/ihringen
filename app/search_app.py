@@ -10,6 +10,8 @@ from .packages.phonetik import koelner_phonetik, apply_phonetic_filter
 
 application = Flask(__name__)
 
+
+
 def fetch_data():
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     cur = conn.cursor()
@@ -150,27 +152,27 @@ def contact():
 def search():
     df = fetch_data()
     field_mapping = {
-        "Entry": "EntryNum",
-        "Person ID": "PersonID",
-        "Given Name": "FirstNameNorm",
-        "Surname": "LastNameNorm",
-        "Town": "TownOfOrigin",
-        "Comments": "Notes",
-        "Year": "Year"
+        "Entry": "entrynum",
+        "Person ID": "personid",
+        "Given Name": "firstnamenorm",
+        "Surname": "lastnamenorm",
+        "Town": "townoforigin",
+        "Comments": "notes",
+        "Year": "year"
     }
 
     df = number_to_string(df)
     df = na_fix(df, str, "")
 
     #change '0' back to False if using boolean instead of string
-    filtered_data = df[df["WitnessInd"] == '0'] \
+    filtered_data = df[df["witnessind"] == '0'] \
         if request.form.get("witness-ind") == "on" else df
 
-    filtered_data = filtered_data[["EntryNum", "Year", "Date", "Event", "Sex", \
-             "PrimaryInd", "Relationship", "PersonID", "FirstNameNorm", "LastNameNorm", \
-             "TownOfOrigin", "Age", "Status", "Occupation", "Notes", \
-             "BirthXRef", "MarriageXRef", "DeathXRef", "OtherXRef", "OtherXRefEvent", \
-             "Permalink"]] if request.form.get("abridged-data") == "on" else filtered_data
+    filtered_data = filtered_data[["entrynum", "year", "date", "event", "sex", \
+             "primaryind", "relationship", "personid", "firstnamenorm", "lastnamenorm", \
+             "townoforigin", "age", "status", "occupation", "notes", \
+             "birthxref", "marriagexref", "deathxref", "otherxref", "otherxrefevent", \
+             "permalink"]] if request.form.get("abridged-data") == "on" else filtered_data
 
     filtered_rows = filtered_data
 
@@ -193,26 +195,26 @@ def search():
                      filtered_rows = filtered_rows[filtered_rows[column] \
                          .str.contains(search_term, na=False, case=False)]
 
-        filtered_data = filtered_rows[["EntryNum"]] \
-            .drop_duplicates(subset=["EntryNum"], keep='first') \
-            .merge(filtered_data, on='EntryNum', validate="1:m")
+        filtered_data = filtered_rows[["entrynum"]] \
+            .drop_duplicates(subset=["entrynum"], keep='first') \
+            .merge(filtered_data, on='entrynum', validate="1:m")
 
 
     # Define the columns that should span rows when values are identical
-    SPANNING_COLUMNS = ['EntryNum', 'Standesbuch', 'Year', 'Bild', 'Date', 'Event', 'Time', 'Permalink']
+    SPANNING_COLUMNS = ['entrynum', 'standesbuch', 'year', 'bild', 'date', 'event', 'time', 'permalink']
 
     if filtered_data is not None and not filtered_data.empty:
         # Create sorting helper columns
-        filtered_data['_month_order'] = filtered_data['Date'].apply(get_month_value)
-        filtered_data['_event_order'] = filtered_data['Event'].apply(get_event_order)
-        filtered_data['_relationship_order'] = filtered_data['Relationship'].apply(get_relationship_order)
+        filtered_data['_month_order'] = filtered_data['date'].apply(get_month_value)
+        filtered_data['_event_order'] = filtered_data['event'].apply(get_event_order)
+        filtered_data['_relationship_order'] = filtered_data['relationship'].apply(get_relationship_order)
 
         if request.form.get("abridged-data") == "on":
             # Sort the data using our custom ordering
             filtered_data = filtered_data.sort_values(
                 by=[
-                    'EntryNum',
-                    'Year',
+                    'entrynum',
+                    'year',
                     '_month_order',
                     '_event_order',
                     '_relationship_order'
@@ -221,14 +223,14 @@ def search():
                 key=lambda x: pd.Series(x).apply(lambda y: pd.to_numeric(y) if pd.notna(y) else pd.NA)
             )
         else:
-            filtered_data['_standesbuch_order'] = filtered_data['Standesbuch'].apply(get_standesbuch_order)
-            filtered_data['_time_order'] = filtered_data['Time'].apply(get_time_order)
+            filtered_data['_standesbuch_order'] = filtered_data['standesbuch'].apply(get_standesbuch_order)
+            filtered_data['_time_order'] = filtered_data['time'].apply(get_time_order)
             filtered_data = filtered_data.sort_values(
                 by=[
-                    'EntryNum',
+                    'entrynum',
                     '_standesbuch_order',
-                    'Year',
-                    'Bild',
+                    'year',
+                    'bild',
                     '_month_order',
                     '_event_order',
                     '_time_order',
@@ -247,19 +249,19 @@ def search():
         # Convert to list of dicts for easier handling in template
         data_list = filtered_data.to_dict('records')
 
-        # Group the data by EntryNum
+        # Group the data by entrynum
         grouped_data = []
-        for key, group in groupby(data_list, key=itemgetter('EntryNum')):
+        for key, group in groupby(data_list, key=itemgetter('entrynum')):
             group_list = list(group)
 
-           # Calculate row spans for specified columns within this EntryNum group
+           # Calculate row spans for specified columns within this entrynum group
             group_spans = {}
 
-            # Handle EntryNum first - it always spans the entire group
-            group_spans['EntryNum'] = [len(group_list)] + [0] * (len(group_list) - 1)
+            # Handle entrynum first - it always spans the entire group
+            group_spans['entrynum'] = [len(group_list)] + [0] * (len(group_list) - 1)
 
             # For each other column that we want to check for spans
-            for column in SPANNING_COLUMNS[1:]:  # Skip EntryNum as we handled it above
+            for column in SPANNING_COLUMNS[1:]:  # Skip entrynum as we handled it above
                 if column in filtered_data.columns:
                     spans = [0] * len(group_list)  # Initialize all spans to 0
                     i = 0
